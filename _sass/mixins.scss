@@ -49,6 +49,30 @@
     padding-bottom: 20px;
 }
 
+@mixin button($size: 'medium', $bg-color: #FF4040, $txt-color: #FFFFFF, $disabled: false) {
+	text-decoration: none;
+	@if ($size == 'small') {
+		padding: 3px 10px;
+		@include font-size(10);
+	} @else if ($size == 'medium') {
+		padding: 5px 15px;
+		@include font-size(16);
+	} @else if ($size == 'large') {
+		padding: 10px 40px;
+		@include font-size(24);
+	}
+	@if ($disabled == true) {
+		cursor: not-allowed;
+		background-color:#d2d2d2;
+	} @else {
+		background-color: $bg-color;
+		color: $txt-color;
+		&:hover{
+			background-color: steelblue;
+		}
+	}
+}
+
 @mixin font-size($size) {
 	font-size: ($size/10) + rem;
 }

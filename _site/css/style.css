@@ -19,7 +19,9 @@ html { font-size: 62.5%; }
 
 body { font-size: 1rem; }
 
-.component-description { font-style: italic; }
+.component { padding: 40px 0; border-bottom: 1px solid #d2d2d2; }
+
+.component-description { font-style: italic; padding: 40px 0; }
 
 body { font-family: "Catamaran", Helvetica, sans-serif; font-size: 1.6rem; }
 
@@ -86,3 +88,18 @@ p { line-height: 2rem; }
 @media screen and (min-width: 768px) { .col-4-5 { width: 80%; float: left; } }
 
 .grid-filler { background-color: #d2d2d2; border: 1px solid #020202; padding-top: 20px; padding-bottom: 20px; }
+
+.button-sm { text-decoration: none; padding: 3px 10px; font-size: 1rem; background-color: #FF4040; color: #FFFFFF; }
+.button-sm:hover { background-color: steelblue; }
+
+.button-md { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; background-color: #FF4040; color: #FFFFFF; }
+.button-md:hover { background-color: steelblue; }
+
+.button-lg { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; background-color: #FF4040; color: #FFFFFF; }
+.button-lg:hover { background-color: steelblue; }
+
+.button-sm.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; cursor: not-allowed; background-color: #d2d2d2; }
+
+.button-md.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; cursor: not-allowed; background-color: #d2d2d2; }
+
+.button-lg.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; cursor: not-allowed; background-color: #d2d2d2; }
