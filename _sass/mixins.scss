@@ -1,0 +1,71 @@
+@mixin break-large {
+	@media screen and (min-width:768px) {
+		@content;
+	}
+}
+
+@mixin break-medium {
+	@media screen and (min-width:480px){
+		@content;
+	}
+}
+
+@mixin break-small {
+	@media screen and (max-width:479px){
+		@content;
+	}
+}
+
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin col($num, $tot) {
+	box-sizing: border-box;
+	padding: 0 10px;
+	width:100%;
+	@if $tot > 5 {
+		@include break-medium {
+			width: percentage((($tot/2)*$num/$tot));
+			float:left;
+		}
+	}
+	@include break-large {
+		width: percentage($num/$tot);
+		float:left;
+	}
+}
+
+@mixin filler($color: null, $w: 0, $h: 0, $border-size: 0, $border-color: null) {
+	background-color:$color;
+	border:$border-size solid $border-color;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@mixin font-size($size) {
+	font-size: ($size/10) + rem;
+}
+
+@mixin line-height($value) {
+	line-height: ($value/10) + rem;
+}
+
+@mixin heading($size) {
+	@include font-size($size);
+	@include line-height(32);
+}
+
+@mixin cross-transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

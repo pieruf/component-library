@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gte IE 9]><!--> <html> <!--<![endif]-->
+<html>
+	<head>
+		{% include head.html %}
+	</head>
+	<body>
+		<header>
+			<!-- Brandbar -->
+			
+		</header>
+		<div class="shell">
+			<!-- Main content -->			
+			<section>
+				<!-- Components -->
+			
+				<div>
+					<div>
+						<h1> Components </h1>
+						{% assign entries = site.components %}
+						{% for entry in entries %}
+						<div>
+							{% include component.html %}
+						</div>
+						{% endfor %} 
+					</div>
+				</div>
+			</section>
+			
+			<!-- General footer -->
+			<footer>
+				
+			</footer>
+		</div>
+	</body>
+</html>

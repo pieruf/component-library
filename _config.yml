@@ -1,0 +1,18 @@
+# Site settings
+title: PFrameWork Component
+email: pieruf@gmail.com
+description: Component base
+baseurl: ""
+  
+# Collections
+collections:
+  components:
+    output: false
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  sass_dir: _sass
+  style: :compact

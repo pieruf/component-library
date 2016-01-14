@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,100,700);
+$imported-font: 'Catamaran';
+
+$font-stack: $imported-font, Helvetica, sans-serif;
+
+body{ 
+	font-family: $font-stack;
+	@include font-size(16);	
+}
+
+h1 {
+	@include heading(32);
+}
+h2 {
+	@include heading(28);
+}
+h3 {
+	@include heading(24);
+}
+h4 {
+	@include heading(20);
+}
+h5 {
+	@include heading(16);
+}
+h6 {
+	@include heading(12);
+}
+
+p {
+	@include line-height(20);
+}
