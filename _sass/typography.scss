@@ -1,10 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran:400,100,700);
-$imported-font: 'Catamaran';
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+$imported-font: 'Quicksand';
 
 $font-stack: $imported-font, Helvetica, sans-serif;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-color: #616161;
 
 body{ 
 	font-family: $font-stack;
+	color: $font-color;
 	@include font-size(16);	
 }
 
@@ -27,6 +32,132 @@ h6 {
 	@include heading(12);
 }
 
+h1.light {
+	@include heading(32, $font-light);
+}
+h2.light {
+	@include heading(28, $font-light);
+}
+h3.light {
+	@include heading(24, $font-light);
+}
+h4.light {
+	@include heading(20, $font-light);
+}
+h5.light {
+	@include heading(16, $font-light);
+}
+h6.light {
+	@include heading(12, $font-light);
+}
+
+h1.bold {
+	@include heading(32, $font-bold);
+}
+h2.bold {
+	@include heading(28, $font-bold);
+}
+h3.bold {
+	@include heading(24, $font-bold);
+}
+h4.bold {
+	@include heading(20, $font-bold);
+}
+h5.bold {
+	@include heading(16, $font-bold);
+}
+h6.bold {
+	@include heading(12, $font-bold);
+}
+
+hr {
+	@include hr;
+}
+
+hr.dotted {
+	@include hr('dotted');
+}
+
+hr.double {
+	@include hr('double');
+}
+
+hr.dashed {
+	@include hr('dashed');
+}
+
+hr.ridge {
+	@include hr('ridge');
+}
+
+hr.outset {
+	@include hr('outset');
+}
+
+hr.inset {
+	@include hr('inset');
+}
+
+hr.groove {
+	@include hr('groove');
+}
+
 p {
 	@include line-height(20);
+	padding: 10px 0;
+}
+
+strong {
+	font-weight: $font-bold;
+}
+
+em {
+	font-style: italic;
+}
+
+u {
+	text-decoration: underline;
+}
+
+mark {
+	@include highlight;
+}
+
+mark.warning {
+	@include highlight('warning');
+}
+
+del {
+    text-decoration: line-through;
+}
+
+blockquote {
+	@include line-height(20);
+    border-left: 5px solid #d2d2d2;
+    padding: 0 0 0 20px;
+    margin: 20px 0;
+}
+
+span.quote-auth {
+	font-style: italic;
+	&:before {
+		content: "\2014 \00a0";
+	}
+}
+
+q {
+	font-style: italic;
+	&:before {
+		content: "\00AB";
+	}
+	&:after {
+		content: "\00BB";
+	}
+}
+
+code {
+    background-color: #d2d2d2;
+    display: block;
+    padding: 20px;
+    margin: 20px 0;
 }

@@ -13,8 +13,8 @@
 	width:100%;
 	padding: 10px 0;
 	@media screen and (min-width:768px) {
-		& > :first-child {padding-left:0px;}
-		& > :last-child {padding-right:0px;}
+		//& > :first-child {padding-left:0px;}
+		//& > :last-child {padding-right:0px;}
 	}
 	@include clearfix;
 }

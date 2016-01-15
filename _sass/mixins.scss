@@ -28,7 +28,7 @@
 
 @mixin col($num, $tot) {
 	box-sizing: border-box;
-	padding: 0 10px;
+	padding: 1rem;
 	width:100%;
 	@if $tot > 5 {
 		@include break-medium {
@@ -81,9 +81,24 @@
 	line-height: ($value/10) + rem;
 }
 
-@mixin heading($size) {
+@mixin heading($size, $weight: $font-normal) {
 	@include font-size($size);
 	@include line-height(32);
+	font-weight: $weight;
+}
+
+@mixin hr($variant: "solid") {
+	border-style: unquote($variant);
+}
+
+@mixin highlight($type: "normal") {
+	@if ($type == "normal") {
+		background-color: #FFAD33;
+	} @else if ($type == "warning") {
+		background-color: #FF3333;
+	}
+    color: #fff;
+    padding: 2px 5px;
 }
 
 @mixin cross-transition($args...) {
