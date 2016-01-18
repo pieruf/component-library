@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, a.textual, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
@@ -150,17 +150,61 @@ code { background-color: #d2d2d2; display: block; padding: 20px; margin: 20px 0;
 
 .grid-filler { background-color: #d2d2d2; border: 1px solid #020202; padding-top: 20px; padding-bottom: 20px; }
 
-.button-sm { text-decoration: none; padding: 3px 10px; font-size: 1rem; background-color: #FF4040; color: #FFFFFF; }
-.button-sm:hover { background-color: steelblue; }
+a, a.textual { color: steelblue; text-decoration: underline; }
+a:visited { color: steelblue; text-decoration: underline; }
+a:hover { color: magenta; text-decoration: underline; }
+a:active { color: yellow; text-decoration: underline; }
 
-.button-md { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; background-color: #FF4040; color: #FFFFFF; }
-.button-md:hover { background-color: steelblue; }
+a.textual { color: green; text-decoration: none; font-weight: 700; }
+a.textual:visited { color: green; }
+a.textual:hover { color: purple; text-decoration: underline; }
+a.textual:active { color: teal; text-decoration: underline; }
 
-.button-lg { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; background-color: #FF4040; color: #FFFFFF; }
-.button-lg:hover { background-color: steelblue; }
+a.button-sm { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: #FF4040; color: #FFFFFF; }
+a.button-sm:hover { background-color: steelblue; }
 
-.button-sm.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-md { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: #FF4040; color: #FFFFFF; }
+a.button-md:hover { background-color: steelblue; }
 
-.button-md.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-lg { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: #FF4040; color: #FFFFFF; }
+a.button-lg:hover { background-color: steelblue; }
 
-.button-lg.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-sm.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; cursor: not-allowed; background-color: #d2d2d2; }
+
+a.button-md.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; cursor: not-allowed; background-color: #d2d2d2; }
+
+a.button-lg.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; cursor: not-allowed; background-color: #d2d2d2; }
+
+a.button-sm.empty { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 2px; border-style: solid; }
+a.button-sm.empty:hover { background-color: steelblue; }
+a.button-sm.empty:hover, a.button-sm.empty:active { background-color: #FF4040; color: #ffffff; }
+
+a.button-md.empty { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 3px; border-style: solid; }
+a.button-md.empty:hover { background-color: steelblue; }
+a.button-md.empty:hover, a.button-md.empty:active { background-color: #FF4040; color: #ffffff; }
+
+a.button-lg.empty { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 5px; border-style: solid; }
+a.button-lg.empty:hover { background-color: steelblue; }
+a.button-lg.empty:hover, a.button-lg.empty:active { background-color: #FF4040; color: #ffffff; }
+
+a.button-sm.empty.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 2px; border-style: solid; }
+a.button-sm.empty.disabled:hover { background-color: steelblue; }
+a.button-sm.empty.disabled:hover, a.button-sm.empty.disabled:active { background-color: transparent; }
+
+a.button-md.empty.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 3px; border-style: solid; }
+a.button-md.empty.disabled:hover { background-color: steelblue; }
+a.button-md.empty.disabled:hover, a.button-md.empty.disabled:active { background-color: transparent; }
+
+a.button-lg.empty.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 5px; border-style: solid; }
+a.button-lg.empty.disabled:hover { background-color: steelblue; }
+a.button-lg.empty.disabled:hover, a.button-lg.empty.disabled:active { background-color: transparent; }
+
+ul, ol, ol.decimal, ol.roman, ol.letters { line-height: 2.4rem; padding-top: 10px; }
+
+ol { list-style-position: inside; list-style-type: decimal; }
+
+ol.decimal { list-style-position: inside; list-style-type: decimal-leading-zero; }
+
+ol.roman { list-style-position: inside; list-style-type: upper-roman; }
+
+ol.letters { list-style-position: inside; list-style-type: upper-latin; }

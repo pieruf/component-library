@@ -1,0 +1,79 @@
+a {
+	@include link('default');
+	&:visited {
+		@include link('visited');
+	}
+	&:hover {
+		@include link('hover');
+	}
+	&:active {
+		@include link('active');
+	}
+}
+
+a.textual {
+	@extend a;
+	color: green;
+	text-decoration: none;
+	font-weight: $font-bold;
+	&:visited {
+		color: green;
+	}
+	&:hover {
+		color: purple;
+		text-decoration: underline;
+	}
+	&:active {
+		color: teal;
+		text-decoration: underline;
+	}
+
+}
+
+a.button-sm {
+	@include button($size: 'small');
+}
+
+a.button-md {
+	@include button($size: 'medium');
+}
+
+a.button-lg {
+	@include button($size: 'large');
+}
+
+a.button-sm.disabled {
+	@include button($size: 'small', $disabled: true);
+}
+
+a.button-md.disabled {
+	@include button($size: 'medium', $disabled: true);
+}
+
+a.button-lg.disabled {
+	@include button($size: 'large', $disabled: true);
+}
+
+a.button-sm.empty {
+	@include empty-button($size: 'small', $txt-color: #FF4040);
+}
+
+a.button-md.empty {
+	@include empty-button($size: 'medium', $txt-color: #FF4040);
+}
+
+a.button-lg.empty {
+	@include empty-button($size: 'large', $txt-color: #FF4040);
+}
+
+a.button-sm.empty.disabled {
+	@include empty-button($size: 'small', $disabled: true);
+}
+
+a.button-md.empty.disabled {
+	@include empty-button($size: 'medium', $disabled: true);
+}
+
+a.button-lg.empty.disabled {
+	@include empty-button($size: 'large', $disabled: true);
+}

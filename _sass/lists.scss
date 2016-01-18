@@ -1,0 +1,24 @@
+%list {
+	@include line-height(24);
+	padding-top: 10px;
+}
+
+ul {
+	@extend %list;
+}
+
+ol {
+	@include ordered-list;
+}
+
+ol.decimal{
+	@include ordered-list('decimal');
+}
+
+ol.roman {
+	@include ordered-list('roman');
+}
+
+ol.letters {
+	@include ordered-list('letters');
+}

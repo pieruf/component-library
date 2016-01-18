@@ -54,12 +54,16 @@
 	@if ($size == 'small') {
 		padding: 3px 10px;
 		@include font-size(10);
+		@include line-height(30)
+		
 	} @else if ($size == 'medium') {
 		padding: 5px 15px;
 		@include font-size(16);
+		@include line-height(60)
 	} @else if ($size == 'large') {
 		padding: 10px 40px;
 		@include font-size(24);
+		@include line-height(90)
 	}
 	@if ($disabled == true) {
 		cursor: not-allowed;
@@ -71,6 +75,50 @@
 			background-color: steelblue;
 		}
 	}
+}
+
+@mixin empty-button ($size: 'medium', $bg-color: transparent, $txt-color: #000000, $disabled: false) {
+	@include button($size, $bg-color, $txt-color);
+	@if ($disabled == false) {
+		color: $txt-color;
+		&:hover, &:active {
+			background-color: $txt-color;
+			color: #ffffff;
+		}
+	} @else {
+		color: #d2d2d2;
+		&:hover, &:active {
+			background-color: $bg-color;
+		}
+	}
+	border: {
+		@if ($disabled == false) {
+			color: $txt-color;
+		} @else {
+			color: #d2d2d2;
+		}
+		@if ($size == 'small') {
+			width: 2px;
+		} @else if ($size == 'medium') {
+			width: 3px;
+		} @else if ($size == 'large') {
+			width: 5px;
+		}
+		style: solid;
+	}
+}
+
+@mixin link($state: 'default') {
+	@if ($state == 'default') {
+		color: steelblue;
+	} @else if ($state == 'hover') {
+		color: magenta;
+	} @else if ($state == 'active') {
+		color: yellow;
+	} @else if ($state == 'visited') {
+		color: steelblue;
+	}
+	text-decoration: underline;
 }
 
 @mixin font-size($size) {
@@ -99,6 +147,21 @@
 	}
     color: #fff;
     padding: 2px 5px;
+}
+
+@mixin ordered-list($variant: 'default') {
+	@extend %list;
+	list-style-position: inside;
+	@if ($variant == 'decimal') {
+		list-style-type: decimal-leading-zero;
+	} @else if ($variant == 'roman') {
+		list-style-type: upper-roman;
+	} @else if ($variant == 'letters') {
+		list-style-type: upper-latin;
+	} @else {
+		list-style-type:  decimal;
+	}
+
 }
 
 @mixin cross-transition($args...) {
