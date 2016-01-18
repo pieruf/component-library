@@ -1,0 +1,9 @@
+$table-color: #29AAF5;
+
+table {
+	@include table($table-color);
+}
+
+table.striped {
+	@include table($table-color, 'striped');
+}
