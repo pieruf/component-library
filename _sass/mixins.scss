@@ -49,7 +49,7 @@
     padding-bottom: 20px;
 }
 
-@mixin button($size: 'medium', $bg-color: #FF4040, $txt-color: #FFFFFF, $disabled: false) {
+@mixin button($size: 'medium', $bg-color: $color-main, $txt-color: $color-light, $disabled: false) {
 	text-decoration: none;
 	@if ($size == 'small') {
 		padding: 3px 10px;
@@ -67,26 +67,26 @@
 	}
 	@if ($disabled == true) {
 		cursor: not-allowed;
-		background-color:#d2d2d2;
+		background-color: $color-grey;
 	} @else {
 		background-color: $bg-color;
 		color: $txt-color;
 		&:hover{
-			background-color: steelblue;
+			background-color: lighten($bg-color, 20%);
 		}
 	}
 }
 
-@mixin empty-button ($size: 'medium', $bg-color: transparent, $txt-color: #000000, $disabled: false) {
+@mixin empty-button ($size: 'medium', $bg-color: transparent, $txt-color: $color-dark, $disabled: false) {
 	@include button($size, $bg-color, $txt-color);
 	@if ($disabled == false) {
 		color: $txt-color;
 		&:hover, &:active {
 			background-color: $txt-color;
-			color: #ffffff;
+			color: $color-light;
 		}
 	} @else {
-		color: #d2d2d2;
+		color: $color-grey;
 		&:hover, &:active {
 			background-color: $bg-color;
 		}
@@ -95,7 +95,7 @@
 		@if ($disabled == false) {
 			color: $txt-color;
 		} @else {
-			color: #d2d2d2;
+			color: $color-grey;
 		}
 		@if ($size == 'small') {
 			width: 2px;
@@ -108,15 +108,14 @@
 	}
 }
 
-@mixin link($state: 'default') {
-	@if ($state == 'default') {
-		color: steelblue;
-	} @else if ($state == 'hover') {
-		color: magenta;
+@mixin link($state) {
+	color: $color-main;
+	@if ($state == 'hover') {
+		color: $color-confirm;
 	} @else if ($state == 'active') {
-		color: yellow;
+		color: $color-confirm;
 	} @else if ($state == 'visited') {
-		color: steelblue;
+		color: $color-main;
 	}
 	text-decoration: underline;
 }
@@ -141,9 +140,9 @@
 
 @mixin highlight($type: "normal") {
 	@if ($type == "normal") {
-		background-color: #FFAD33;
+		background-color: $color-confirm;
 	} @else if ($type == "warning") {
-		background-color: #FF3333;
+		background-color: $color-warn;
 	}
     color: #fff;
     padding: 2px 5px;
@@ -171,7 +170,7 @@
 	thead {
 		th {
 			background: $table-color;
-		    color: #fff;
+		    color: $color-light;
 		    font-weight: 900;
 		    @include line-height(32);
 		    text-align: left;
@@ -179,15 +178,15 @@
 		}	
 	}
 	tbody {
-		border-bottom: 3px solid darken($table-color, 25%);
+		border-bottom: 3px solid darken($table-color, 10%);
 		tr {
-			border-bottom: 1px solid #d2d2d2;
+			border-bottom: 1px solid $color-grey;
 			td {
 				padding: 1rem 0 1rem 1rem;
 			}
 			@if ($variant == 'striped') {
 				&:nth-child(even) {
-					background-color: lighten($table-color, 25%);
+					background-color: lighten($table-color, 33%);
 				}
 			}
 		}

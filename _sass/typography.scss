@@ -1,73 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
-$imported-font: 'Quicksand';
-
-$font-stack: $imported-font, Helvetica, sans-serif;
-$font-light: 300;
-$font-normal: 400;
-$font-bold: 700;
-$font-color: #616161;
+html{
+	font-size: 62.5%;
+}
 
 body{ 
+	font-size:1rem;
 	font-family: $font-stack;
 	color: $font-color;
 	@include font-size(16);	
 }
 
 h1 {
-	@include heading(32);
+	@include heading($h1);
 }
 h2 {
-	@include heading(28);
+	@include heading($h2);
 }
 h3 {
-	@include heading(24);
+	@include heading($h3);
 }
 h4 {
-	@include heading(20);
+	@include heading($h4);
 }
 h5 {
-	@include heading(16);
+	@include heading($h5);
 }
 h6 {
-	@include heading(12);
+	@include heading($h6);
 }
 
 h1.light {
-	@include heading(32, $font-light);
+	@include heading($h1, $font-light);
 }
 h2.light {
-	@include heading(28, $font-light);
+	@include heading($h2, $font-light);
 }
 h3.light {
-	@include heading(24, $font-light);
+	@include heading($h3, $font-light);
 }
 h4.light {
-	@include heading(20, $font-light);
+	@include heading($h4, $font-light);
 }
 h5.light {
-	@include heading(16, $font-light);
+	@include heading($h5, $font-light);
 }
 h6.light {
-	@include heading(12, $font-light);
+	@include heading($h6, $font-light);
 }
 
 h1.bold {
-	@include heading(32, $font-bold);
+	@include heading($h1, $font-bold);
 }
 h2.bold {
-	@include heading(28, $font-bold);
+	@include heading($h2, $font-bold);
 }
 h3.bold {
-	@include heading(24, $font-bold);
+	@include heading($h3, $font-bold);
 }
 h4.bold {
-	@include heading(20, $font-bold);
+	@include heading($h4, $font-bold);
 }
 h5.bold {
-	@include heading(16, $font-bold);
+	@include heading($h5, $font-bold);
 }
 h6.bold {
-	@include heading(12, $font-bold);
+	@include heading($h6, $font-bold);
 }
 
 hr {
@@ -107,6 +103,22 @@ p {
 	padding: 10px 0;
 }
 
+p.txt-left {
+	text-align: left;
+}
+
+p.txt-center {
+	text-align: center;
+}
+
+p.txt-right {
+	text-align: right;
+}
+
+p.txt-justify {
+	text-align: justify;
+}
+
 strong {
 	font-weight: $font-bold;
 }
@@ -127,13 +139,13 @@ mark.warning {
 	@include highlight('warning');
 }
 
-del {
+s {
     text-decoration: line-through;
 }
 
 blockquote {
 	@include line-height(20);
-    border-left: 5px solid #d2d2d2;
+    border-left: 5px solid $color-grey;
     padding: 0 0 0 20px;
     margin: 20px 0;
 }
@@ -156,7 +168,7 @@ q {
 }
 
 code {
-    background-color: #d2d2d2;
+    background-color: $color-grey;
     display: block;
     padding: 20px;
     margin: 20px 0;

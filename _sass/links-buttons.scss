@@ -13,18 +13,18 @@ a {
 
 a.textual {
 	@extend a;
-	color: green;
+	color: $color-confirm;
 	text-decoration: none;
 	font-weight: $font-bold;
 	&:visited {
-		color: green;
+		color: $color-confirm;
 	}
 	&:hover {
-		color: purple;
+		color: $color-warn;
 		text-decoration: underline;
 	}
 	&:active {
-		color: teal;
+		color: $color-warn;
 		text-decoration: underline;
 	}
 
@@ -55,15 +55,15 @@ a.button-lg.disabled {
 }
 
 a.button-sm.empty {
-	@include empty-button($size: 'small', $txt-color: #FF4040);
+	@include empty-button($size: 'small', $txt-color: $color-main);
 }
 
 a.button-md.empty {
-	@include empty-button($size: 'medium', $txt-color: #FF4040);
+	@include empty-button($size: 'medium', $txt-color: $color-main);
 }
 
 a.button-lg.empty {
-	@include empty-button($size: 'large', $txt-color: #FF4040);
+	@include empty-button($size: 'large', $txt-color: $color-main);
 }
 
 a.button-sm.empty.disabled {

@@ -1,12 +1,10 @@
-html{
-	font-size: 62.5%;
+body {
+	background-color: $color-light;
 }
-
-body{font-size:1rem;}
 
 .component {
 	padding: 40px 0;
-	border-bottom: 1px solid #d2d2d2;
+	border-bottom: 1px solid $color-grey;
 }
 .component-description{
 	font-style: italic;

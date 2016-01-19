@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, a.textual, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -15,49 +15,49 @@ q:before, q:after { content: ""; content: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-html { font-size: 62.5%; }
+body { background-color: #fbfef9; }
 
-body { font-size: 1rem; }
-
-.component { padding: 40px 0; border-bottom: 1px solid #d2d2d2; }
+.component { padding: 40px 0; border-bottom: 1px solid #ababab; }
 
 .component-description { font-style: italic; padding: 40px 0; }
 
-body { font-family: "Quicksand", Helvetica, sans-serif; color: #616161; font-size: 1.6rem; }
+html { font-size: 62.5%; }
 
-h1 { font-size: 3.2rem; line-height: 3.2rem; font-weight: 400; }
+body { font-size: 1rem; font-family: "Roboto", Helvetica, sans-serif; color: #0d1b1e; font-size: 1.6rem; }
 
-h2 { font-size: 2.8rem; line-height: 3.2rem; font-weight: 400; }
+h1 { font-size: 3.6rem; line-height: 3.2rem; font-weight: 400; }
+
+h2 { font-size: 3rem; line-height: 3.2rem; font-weight: 400; }
 
 h3 { font-size: 2.4rem; line-height: 3.2rem; font-weight: 400; }
 
-h4 { font-size: 2rem; line-height: 3.2rem; font-weight: 400; }
+h4 { font-size: 1.8rem; line-height: 3.2rem; font-weight: 400; }
 
-h5 { font-size: 1.6rem; line-height: 3.2rem; font-weight: 400; }
+h5 { font-size: 1.4rem; line-height: 3.2rem; font-weight: 400; }
 
 h6 { font-size: 1.2rem; line-height: 3.2rem; font-weight: 400; }
 
-h1.light { font-size: 3.2rem; line-height: 3.2rem; font-weight: 300; }
+h1.light { font-size: 3.6rem; line-height: 3.2rem; font-weight: 100; }
 
-h2.light { font-size: 2.8rem; line-height: 3.2rem; font-weight: 300; }
+h2.light { font-size: 3rem; line-height: 3.2rem; font-weight: 100; }
 
-h3.light { font-size: 2.4rem; line-height: 3.2rem; font-weight: 300; }
+h3.light { font-size: 2.4rem; line-height: 3.2rem; font-weight: 100; }
 
-h4.light { font-size: 2rem; line-height: 3.2rem; font-weight: 300; }
+h4.light { font-size: 1.8rem; line-height: 3.2rem; font-weight: 100; }
 
-h5.light { font-size: 1.6rem; line-height: 3.2rem; font-weight: 300; }
+h5.light { font-size: 1.4rem; line-height: 3.2rem; font-weight: 100; }
 
-h6.light { font-size: 1.2rem; line-height: 3.2rem; font-weight: 300; }
+h6.light { font-size: 1.2rem; line-height: 3.2rem; font-weight: 100; }
 
-h1.bold { font-size: 3.2rem; line-height: 3.2rem; font-weight: 700; }
+h1.bold { font-size: 3.6rem; line-height: 3.2rem; font-weight: 700; }
 
-h2.bold { font-size: 2.8rem; line-height: 3.2rem; font-weight: 700; }
+h2.bold { font-size: 3rem; line-height: 3.2rem; font-weight: 700; }
 
 h3.bold { font-size: 2.4rem; line-height: 3.2rem; font-weight: 700; }
 
-h4.bold { font-size: 2rem; line-height: 3.2rem; font-weight: 700; }
+h4.bold { font-size: 1.8rem; line-height: 3.2rem; font-weight: 700; }
 
-h5.bold { font-size: 1.6rem; line-height: 3.2rem; font-weight: 700; }
+h5.bold { font-size: 1.4rem; line-height: 3.2rem; font-weight: 700; }
 
 h6.bold { font-size: 1.2rem; line-height: 3.2rem; font-weight: 700; }
 
@@ -79,19 +79,27 @@ hr.groove { border-style: groove; }
 
 p { line-height: 2rem; padding: 10px 0; }
 
+p.txt-left { text-align: left; }
+
+p.txt-center { text-align: center; }
+
+p.txt-right { text-align: right; }
+
+p.txt-justify { text-align: justify; }
+
 strong { font-weight: 700; }
 
 em { font-style: italic; }
 
 u { text-decoration: underline; }
 
-mark { background-color: #FFAD33; color: #fff; padding: 2px 5px; }
+mark { background-color: #1b998b; color: #fff; padding: 2px 5px; }
 
-mark.warning { background-color: #FF3333; color: #fff; padding: 2px 5px; }
+mark.warning { background-color: #e54b4b; color: #fff; padding: 2px 5px; }
 
-del { text-decoration: line-through; }
+s { text-decoration: line-through; }
 
-blockquote { line-height: 2rem; border-left: 5px solid #d2d2d2; padding: 0 0 0 20px; margin: 20px 0; }
+blockquote { line-height: 2rem; border-left: 5px solid #ababab; padding: 0 0 0 20px; margin: 20px 0; }
 
 span.quote-auth { font-style: italic; }
 span.quote-auth:before { content: "\2014 \00a0"; }
@@ -100,7 +108,7 @@ q { font-style: italic; }
 q:before { content: "\00AB"; }
 q:after { content: "\00BB"; }
 
-code { background-color: #d2d2d2; display: block; padding: 20px; margin: 20px 0; }
+code { background-color: #ababab; display: block; padding: 20px; margin: 20px 0; }
 
 .shell, .full-shell { box-sizing: border-box; width: 100%; padding: 0 1em; }
 
@@ -148,55 +156,55 @@ code { background-color: #d2d2d2; display: block; padding: 20px; margin: 20px 0;
 .col-4-5 { box-sizing: border-box; padding: 1rem; width: 100%; }
 @media screen and (min-width: 768px) { .col-4-5 { width: 80%; float: left; } }
 
-.grid-filler { background-color: #d2d2d2; border: 1px solid #020202; padding-top: 20px; padding-bottom: 20px; }
+.grid-filler { background-color: #ababab; border: 1px solid #5f5f5f; padding-top: 20px; padding-bottom: 20px; }
 
-a, a.textual { color: steelblue; text-decoration: underline; }
-a:visited { color: steelblue; text-decoration: underline; }
-a:hover { color: magenta; text-decoration: underline; }
-a:active { color: yellow; text-decoration: underline; }
+a, a.textual { color: #3d5a80; text-decoration: underline; }
+a:visited { color: #3d5a80; color: #3d5a80; text-decoration: underline; }
+a:hover { color: #3d5a80; color: #1b998b; text-decoration: underline; }
+a:active { color: #3d5a80; color: #1b998b; text-decoration: underline; }
 
-a.textual { color: green; text-decoration: none; font-weight: 700; }
-a.textual:visited { color: green; }
-a.textual:hover { color: purple; text-decoration: underline; }
-a.textual:active { color: teal; text-decoration: underline; }
+a.textual { color: #1b998b; text-decoration: none; font-weight: 700; }
+a.textual:visited { color: #1b998b; }
+a.textual:hover { color: #e54b4b; text-decoration: underline; }
+a.textual:active { color: #e54b4b; text-decoration: underline; }
 
-a.button-sm { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: #FF4040; color: #FFFFFF; }
-a.button-sm:hover { background-color: steelblue; }
+a.button-sm { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: #3d5a80; color: #fbfef9; }
+a.button-sm:hover { background-color: #6b8cb8; }
 
-a.button-md { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: #FF4040; color: #FFFFFF; }
-a.button-md:hover { background-color: steelblue; }
+a.button-md { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: #3d5a80; color: #fbfef9; }
+a.button-md:hover { background-color: #6b8cb8; }
 
-a.button-lg { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: #FF4040; color: #FFFFFF; }
-a.button-lg:hover { background-color: steelblue; }
+a.button-lg { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: #3d5a80; color: #fbfef9; }
+a.button-lg:hover { background-color: #6b8cb8; }
 
-a.button-sm.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-sm.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; cursor: not-allowed; background-color: #ababab; }
 
-a.button-md.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-md.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; cursor: not-allowed; background-color: #ababab; }
 
-a.button-lg.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; cursor: not-allowed; background-color: #d2d2d2; }
+a.button-lg.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; cursor: not-allowed; background-color: #ababab; }
 
-a.button-sm.empty { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 2px; border-style: solid; }
-a.button-sm.empty:hover { background-color: steelblue; }
-a.button-sm.empty:hover, a.button-sm.empty:active { background-color: #FF4040; color: #ffffff; }
+a.button-sm.empty { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #3d5a80; color: #3d5a80; border-color: #3d5a80; border-width: 2px; border-style: solid; }
+a.button-sm.empty:hover { background-color: rgba(51, 51, 51, 0); }
+a.button-sm.empty:hover, a.button-sm.empty:active { background-color: #3d5a80; color: #fbfef9; }
 
-a.button-md.empty { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 3px; border-style: solid; }
-a.button-md.empty:hover { background-color: steelblue; }
-a.button-md.empty:hover, a.button-md.empty:active { background-color: #FF4040; color: #ffffff; }
+a.button-md.empty { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #3d5a80; color: #3d5a80; border-color: #3d5a80; border-width: 3px; border-style: solid; }
+a.button-md.empty:hover { background-color: rgba(51, 51, 51, 0); }
+a.button-md.empty:hover, a.button-md.empty:active { background-color: #3d5a80; color: #fbfef9; }
 
-a.button-lg.empty { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #FF4040; color: #FF4040; border-color: #FF4040; border-width: 5px; border-style: solid; }
-a.button-lg.empty:hover { background-color: steelblue; }
-a.button-lg.empty:hover, a.button-lg.empty:active { background-color: #FF4040; color: #ffffff; }
+a.button-lg.empty { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #3d5a80; color: #3d5a80; border-color: #3d5a80; border-width: 5px; border-style: solid; }
+a.button-lg.empty:hover { background-color: rgba(51, 51, 51, 0); }
+a.button-lg.empty:hover, a.button-lg.empty:active { background-color: #3d5a80; color: #fbfef9; }
 
-a.button-sm.empty.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 2px; border-style: solid; }
-a.button-sm.empty.disabled:hover { background-color: steelblue; }
+a.button-sm.empty.disabled { text-decoration: none; padding: 3px 10px; font-size: 1rem; line-height: 3rem; background-color: transparent; color: #0d1b1e; color: #ababab; border-color: #ababab; border-width: 2px; border-style: solid; }
+a.button-sm.empty.disabled:hover { background-color: rgba(51, 51, 51, 0); }
 a.button-sm.empty.disabled:hover, a.button-sm.empty.disabled:active { background-color: transparent; }
 
-a.button-md.empty.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 3px; border-style: solid; }
-a.button-md.empty.disabled:hover { background-color: steelblue; }
+a.button-md.empty.disabled { text-decoration: none; padding: 5px 15px; font-size: 1.6rem; line-height: 6rem; background-color: transparent; color: #0d1b1e; color: #ababab; border-color: #ababab; border-width: 3px; border-style: solid; }
+a.button-md.empty.disabled:hover { background-color: rgba(51, 51, 51, 0); }
 a.button-md.empty.disabled:hover, a.button-md.empty.disabled:active { background-color: transparent; }
 
-a.button-lg.empty.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #000000; color: #d2d2d2; border-color: #d2d2d2; border-width: 5px; border-style: solid; }
-a.button-lg.empty.disabled:hover { background-color: steelblue; }
+a.button-lg.empty.disabled { text-decoration: none; padding: 10px 40px; font-size: 2.4rem; line-height: 9rem; background-color: transparent; color: #0d1b1e; color: #ababab; border-color: #ababab; border-width: 5px; border-style: solid; }
+a.button-lg.empty.disabled:hover { background-color: rgba(51, 51, 51, 0); }
 a.button-lg.empty.disabled:hover, a.button-lg.empty.disabled:active { background-color: transparent; }
 
 ul, ol, ol.decimal, ol.roman, ol.letters { line-height: 2.4rem; padding-top: 10px; }
@@ -210,14 +218,14 @@ ol.roman { list-style-position: inside; list-style-type: upper-roman; }
 ol.letters { list-style-position: inside; list-style-type: upper-latin; }
 
 table { width: 100%; float: left; margin-top: 2rem; }
-table thead th { background: #29AAF5; color: #fff; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
-table tbody { border-bottom: 3px solid #076297; }
-table tbody tr { border-bottom: 1px solid #d2d2d2; }
+table thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
+table tbody { border-bottom: 3px solid #2d425d; }
+table tbody tr { border-bottom: 1px solid #ababab; }
 table tbody tr td { padding: 1rem 0 1rem 1rem; }
 
 table.striped { width: 100%; float: left; margin-top: 2rem; }
-table.striped thead th { background: #29AAF5; color: #fff; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
-table.striped tbody { border-bottom: 3px solid #076297; }
-table.striped tbody tr { border-bottom: 1px solid #d2d2d2; }
+table.striped thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
+table.striped tbody { border-bottom: 3px solid #2d425d; }
+table.striped tbody tr { border-bottom: 1px solid #ababab; }
 table.striped tbody tr td { padding: 1rem 0 1rem 1rem; }
-table.striped tbody tr:nth-child(even) { background-color: #a3dafb; }
+table.striped tbody tr:nth-child(even) { background-color: #98afce; }
