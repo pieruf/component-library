@@ -5,3 +5,15 @@ table {
 table.striped {
 	@include table($color-main, 'striped');
 }
+
+table.hover {
+	@include table($color-main, 'hover');
+}
+
+tr.highlight {
+	background-color: $color-confirm;
+}
+
+tr.warn {
+	background-color: $color-warn;
+}

@@ -22,3 +22,17 @@ ol.roman {
 ol.letters {
 	@include ordered-list('letters');
 }
+
+ul.inline>li {
+	display: inline-block;
+	padding-right: 1rem;
+}
+
+ol.inline>li {
+	float:left;
+	padding-right: 1rem;
+}
+
+dl {
+	@include description-list;
+}

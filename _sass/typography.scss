@@ -103,20 +103,32 @@ p {
 	padding: 10px 0;
 }
 
-p.txt-left {
+.txt-left {
 	text-align: left;
 }
 
-p.txt-center {
+.txt-center {
 	text-align: center;
 }
 
-p.txt-right {
+.txt-right {
 	text-align: right;
 }
 
-p.txt-justify {
+.txt-justify {
 	text-align: justify;
+}
+
+txt-lower {
+	text-transform: lowercase;
+}
+
+txt-upper {
+	text-transform: uppercase;
+}
+
+txt-capitals {
+	text-transform: capitalize;
 }
 
 strong {
@@ -168,7 +180,10 @@ q {
 }
 
 code {
-    background-color: $color-grey;
+	background-color: $color-grey;
+	padding: 0 5px;
+}
+code.block {
     display: block;
     padding: 20px;
     margin: 20px 0;

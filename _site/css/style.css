@@ -79,13 +79,19 @@ hr.groove { border-style: groove; }
 
 p { line-height: 2rem; padding: 10px 0; }
 
-p.txt-left { text-align: left; }
+.txt-left { text-align: left; }
 
-p.txt-center { text-align: center; }
+.txt-center { text-align: center; }
 
-p.txt-right { text-align: right; }
+.txt-right { text-align: right; }
 
-p.txt-justify { text-align: justify; }
+.txt-justify { text-align: justify; }
+
+txt-lower { text-transform: lowercase; }
+
+txt-upper { text-transform: uppercase; }
+
+txt-capitals { text-transform: capitalize; }
 
 strong { font-weight: 700; }
 
@@ -108,7 +114,9 @@ q { font-style: italic; }
 q:before { content: "\00AB"; }
 q:after { content: "\00BB"; }
 
-code { background-color: #ababab; display: block; padding: 20px; margin: 20px 0; }
+code { background-color: #ababab; padding: 0 5px; }
+
+code.block { display: block; padding: 20px; margin: 20px 0; }
 
 .shell, .full-shell { box-sizing: border-box; width: 100%; padding: 0 1em; }
 
@@ -207,7 +215,7 @@ a.button-lg.empty.disabled { text-decoration: none; padding: 10px 40px; font-siz
 a.button-lg.empty.disabled:hover { background-color: rgba(51, 51, 51, 0); }
 a.button-lg.empty.disabled:hover, a.button-lg.empty.disabled:active { background-color: transparent; }
 
-ul, ol, ol.decimal, ol.roman, ol.letters { line-height: 2.4rem; padding-top: 10px; }
+ul, ol, ol.decimal, ol.roman, ol.letters, dl dt, dl dd { line-height: 2.4rem; padding-top: 10px; }
 
 ol { list-style-position: inside; list-style-type: decimal; }
 
@@ -217,15 +225,36 @@ ol.roman { list-style-position: inside; list-style-type: upper-roman; }
 
 ol.letters { list-style-position: inside; list-style-type: upper-latin; }
 
+ul.inline > li { display: inline-block; padding-right: 1rem; }
+
+ol.inline > li { float: left; padding-right: 1rem; }
+
+dl dt { font-weight: 700; float: left; width: 150px; text-overflow: ellipsis; text-align: right; margin-right: 10px; }
+dl dd { margin-left: 160px; }
+
 table { width: 100%; float: left; margin-top: 2rem; }
 table thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
 table tbody { border-bottom: 3px solid #2d425d; }
 table tbody tr { border-bottom: 1px solid #ababab; }
+table tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
 table tbody tr td { padding: 1rem 0 1rem 1rem; }
 
 table.striped { width: 100%; float: left; margin-top: 2rem; }
 table.striped thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
 table.striped tbody { border-bottom: 3px solid #2d425d; }
 table.striped tbody tr { border-bottom: 1px solid #ababab; }
+table.striped tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
 table.striped tbody tr td { padding: 1rem 0 1rem 1rem; }
 table.striped tbody tr:nth-child(even) { background-color: #98afce; }
+
+table.hover { width: 100%; float: left; margin-top: 2rem; }
+table.hover thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
+table.hover tbody { border-bottom: 3px solid #2d425d; }
+table.hover tbody tr { border-bottom: 1px solid #ababab; }
+table.hover tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
+table.hover tbody tr td { padding: 1rem 0 1rem 1rem; }
+table.hover tbody tr:hover { background-color: #98afce; }
+
+tr.highlight { background-color: #1b998b; }
+
+tr.warn { background-color: #e54b4b; }

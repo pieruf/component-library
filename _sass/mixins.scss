@@ -181,6 +181,10 @@
 		border-bottom: 3px solid darken($table-color, 10%);
 		tr {
 			border-bottom: 1px solid $color-grey;
+			th {
+				text-align: left;
+				padding: 1rem 0 1rem 1rem;
+			}
 			td {
 				padding: 1rem 0 1rem 1rem;
 			}
@@ -189,7 +193,29 @@
 					background-color: lighten($table-color, 33%);
 				}
 			}
+			@if ($variant == 'hover') {
+				&:hover {
+					background-color: lighten($table-color, 33%);
+				}
+			}
 		}
+	}
+}
+
+@mixin description-list($term-space: 150px) {
+	dt {
+		@extend %list;
+		font-weight: $font-bold;
+		float: left;
+	    width: $term-space;
+	    text-overflow: ellipsis;
+	    text-align: right;
+	    margin-right: 10px;
+	}
+	
+	dd {
+		@extend %list;
+		margin-left: $term-space+10px;
 	}
 }
 
