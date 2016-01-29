@@ -188,3 +188,25 @@ code.block {
     padding: 20px;
     margin: 20px 0;
 }
+
+.testp {
+	font-family: $material-font;
+}
+
+.check {
+	&:before {
+		content: "\e876";
+	}
+}
+
+.error {
+	&:before {
+		content: "\e14c";
+	}
+}
+
+.warning {
+	&:before {
+		content: "\e001";
+	}
+}

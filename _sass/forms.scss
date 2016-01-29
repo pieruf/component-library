@@ -1,0 +1,11 @@
+.form-element {
+	@include form-element;
+}
+
+input.form-element {
+	height: 40px;
+}
+
+textarea.form-element {
+	height: auto;
+}
