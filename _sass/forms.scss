@@ -9,3 +9,23 @@ input.form-element {
 textarea.form-element {
 	height: auto;
 }
+
+.checkbox {
+	@include font-size(14);
+	display: block;
+    padding: 10px 0;
+}
+
+.checkbox.disabled {
+	cursor: not-allowed;
+	label {
+		cursor: not-allowed;
+	}
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+
