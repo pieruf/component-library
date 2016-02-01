@@ -1,8 +1,5 @@
 .form-element {
 	@include form-element;
-}
-
-input.form-element {
 	height: 40px;
 }
 
@@ -10,22 +7,43 @@ textarea.form-element {
 	height: auto;
 }
 
-.checkbox {
-	@include font-size(14);
-	display: block;
-    padding: 10px 0;
-}
-
-.checkbox.disabled {
-	cursor: not-allowed;
-	label {
-		cursor: not-allowed;
+.options-group {
+	margin: 10px 0;
+	.checkbox, .radio {
+		display: block;
+	    padding: 5px 0;
+	    float: left; // Decrease the dimension of the interaction area
+		clear: both; // Decrease the dimension of the interaction area
+	    &.disabled {
+		    color: $color-grey;
+		    @include cursor('disabled');
+	    }
 	}
-}
-
-input[type="checkbox"] {
-    margin-right: 6px;
-    position: relative;
-    top: -1px;
+	&.inline {
+		.checkbox, .radio {
+			display: inline-block;
+			padding-right: 15px;
+			float: left;
+			clear: none;
+		}
+	}
+	input[type="checkbox"], input[type="radio"] {
+		@include option;
+	    &:checked {
+			background-color: $color-main;
+		}
+		&[disabled] {
+		    border-color: $color-grey;
+		}
+		&:focus {
+			outline: none;
+		}
+		&[disabled] {
+			@include cursor('disabled');
+		}
+	}
+	input[type="radio"] {
+		border-radius: rem($font-size);
+	}
 }
 

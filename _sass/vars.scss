@@ -12,6 +12,8 @@ $color-dark-grey: grayscale($color-main);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700);
 $imported-font: 'Roboto';
 
+$font-size: 16;
+
 // Reference https://design.google.com/icons
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 $material-font: 'Material Icons';

@@ -264,20 +264,22 @@ table.hover tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
 table.hover tbody tr td { padding: 1rem 0 1rem 1rem; }
 table.hover tbody tr:hover { background-color: #98afce; }
 
-tr.highlight { background-color: #1b998b; }
+tr.highlight { background-color: #1b998b; color: #fbfef9; }
 
-tr.warn { background-color: #e54b4b; }
+tr.warn { background-color: #e54b4b; color: #fbfef9; }
 
-.form-element { box-sizing: border-box; width: 100%; padding: 10px 10px; margin: 10px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: 1px solid #ababab; border-radius: 5px; -webkit-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; }
+.form-element { box-sizing: border-box; width: 100%; padding: 10px 10px; margin: 10px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: 1px solid #ababab; border-radius: 5px; -webkit-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; height: 40px; }
 .form-element:focus { outline: #3d5a80; -webkit-box-shadow: 0 0 5px #3d5a80; box-shadow: 0 0 5px #3d5a80; border: 1px solid #3d5a80; }
-
-input.form-element { height: 40px; }
 
 textarea.form-element { height: auto; }
 
-.checkbox { font-size: 1.4rem; display: block; padding: 10px 0; }
-
-.checkbox.disabled { cursor: not-allowed; }
-.checkbox.disabled label { cursor: not-allowed; }
-
-input[type="checkbox"] { margin-right: 6px; position: relative; top: -1px; }
+.options-group { margin: 10px 0; }
+.options-group .checkbox, .options-group .radio { display: block; padding: 5px 0; float: left; clear: both; }
+.options-group .checkbox.disabled, .options-group .radio.disabled { color: #ababab; cursor: not-allowed; }
+.options-group.inline .checkbox, .options-group.inline .radio { display: inline-block; padding-right: 15px; float: left; clear: none; }
+.options-group input[type="checkbox"], .options-group input[type="radio"] { width: 1.6rem; height: 1.6rem; cursor: pointer; border: 1px solid #0d1b1e; -webkit-appearance: none; appearance: none; margin-right: 6px; position: relative; top: 5px; }
+.options-group input[type="checkbox"]:checked, .options-group input[type="radio"]:checked { background-color: #3d5a80; }
+.options-group input[type="checkbox"][disabled], .options-group input[type="radio"][disabled] { border-color: #ababab; }
+.options-group input[type="checkbox"]:focus, .options-group input[type="radio"]:focus { outline: none; }
+.options-group input[type="checkbox"][disabled], .options-group input[type="radio"][disabled] { cursor: not-allowed; }
+.options-group input[type="radio"] { border-radius: 1.6rem; }

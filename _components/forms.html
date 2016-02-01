@@ -12,15 +12,65 @@ id: forms
 		<textarea class="form-element" rows="4" placeholder="Text area"></textarea>
 		<i class="material-icons check"></i> <i class="material-icons error"></i> <i class="material-icons warning"></i>
 	</div>
-	<h2 class="col-1-1 light">Checkboxes</h2>
 	<div class="col-1-2">
-		<div class="checkbox">
-			<label><input type="checkbox" value="value_1">Checkbox label</label>
+		<h2 class="light">Checkboxes</h2>
+		<div clasS="options-group">
+			<label class="checkbox"><input type="checkbox" value="value_1">Checkbox 1</label>
+			<label class="checkbox"><input type="checkbox" value="value_2" checked>Checkbox 2</label>
+			<label class="checkbox disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
 		</div>
 	</div>
 	<div class="col-1-2">
-		<div class="checkbox disabled">
-			<label><input type="checkbox" value="value_2" disabled="true">Disabled checkbox</label>
+		<h2 class="light">Radio Buttons</h2>
+		<div class="options-group">
+			<label class="radio">
+		    	<input type="radio" name="radiobuttons" id="radio1" value="Radio Button 1" checked>
+				Radio Button 1
+			</label>
+		  	<label class="radio">
+		   	 	<input type="radio" name="radiobuttons" id="radio2" value="Radio Button 2">
+		   	 	Radio Button 2
+			</label>
+		  	<label class="radio disabled">
+		    	<input type="radio" name="radiobuttons" id="radio3" value="Radio Button 3" disabled>
+				Radio Button 3 (disabled)
+			</label>
 		</div>
+	</div>
+	<div class="col-1-2">
+		<h2 class="light">Inline Checkboxes</h2>
+		<div class="options-group inline">
+			<label class="checkbox"><input type="checkbox" value="value_1">Checkbox 1</label>
+			<label class="checkbox"><input type="checkbox" value="value_2" checked>Checkbox 2</label>
+			<label class="checkbox disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
+		</div>
+	</div>
+	<div class="col-1-2">
+		<h2 class="light">Inline Radio Buttons</h2>
+		<div class="options-group inline">
+			<div class="radio">
+				<label class="radio">
+			    	<input type="radio" name="radiobuttonsinline" id="radio1" value="Radio Button 1" checked>
+					Radio Button 1
+				</label>
+			  	<label class="radio">
+			   	 	<input type="radio" name="radiobuttonsinline" id="radio2" value="Radio Button 2">
+			   	 	Radio Button 2
+				</label>
+			  	<label class="radio disabled">
+			    	<input type="radio" name="radiobuttonsinline" id="radio3" value="Radio Button 3" disabled>
+					Radio Button 3 (disabled)
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="col-1-1">
+		<h2 class="light">Select</h2>
+		<select name="select" class="form-element">
+			<option value="option0" selected>Default value</option> 
+			<option value="option1">Option 1</option> 
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+		</select>
 	</div>
 </div>

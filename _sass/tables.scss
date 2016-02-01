@@ -12,8 +12,10 @@ table.hover {
 
 tr.highlight {
 	background-color: $color-confirm;
+	color: $color-light;
 }
 
 tr.warn {
 	background-color: $color-warn;
+	color: $color-light;
 }

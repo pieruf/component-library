@@ -26,6 +26,12 @@
   }
 }
 
+@mixin cursor($cursor) {
+	@if ($cursor == 'disabled') {
+		cursor: not-allowed;
+	}
+}
+
 @mixin col($num, $tot) {
 	box-sizing: border-box;
 	padding: 1rem;
@@ -66,7 +72,7 @@
 		@include line-height(90)
 	}
 	@if ($disabled == true) {
-		cursor: not-allowed;
+		@include cursor('disabled');
 		background-color: $color-grey;
 	} @else {
 		background-color: $bg-color;
@@ -121,11 +127,11 @@
 }
 
 @mixin font-size($size) {
-	font-size: ($size/10) + rem;
+	font-size: rem($size);
 }
 
 @mixin line-height($value) {
-	line-height: ($value/10) + rem;
+	line-height: rem($value);
 }
 
 @mixin heading($size, $weight: $font-normal) {
@@ -237,6 +243,18 @@
 	    @include box-shadow(0 0 5px $color-main);
 	    border: 1px solid $color-main;
     }
+}
+
+@mixin option() {
+	width: rem($font-size);
+	height: rem($font-size);
+	cursor: pointer;
+	border: 1px solid $color-dark;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-right: 6px;
+    position: relative;
+    top: 5px;
 }
 
 @mixin box-shadow($args...) {
