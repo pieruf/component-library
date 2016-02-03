@@ -35,16 +35,37 @@
 	<div> <div class="canister">
 	<div class="col-1-1">
 		<h2 class="light">Input text</h2>
-		<input type="text" class="form-element" placeholder="Text input">
-		<textarea class="form-element" rows="4" placeholder="Text area"></textarea>
-		<i class="material-icons check"></i> <i class="material-icons error"></i> <i class="material-icons warning"></i>
+		<div class="input-element">
+			<input type="text" placeholder="Text input">
+		</div>
+		<div class="input-element">
+			<textarea rows="4" placeholder="Text area"></textarea>
+		</div>
+		<div class="input-element">
+			<input type="password" placeholder="Password">
+		</div>
+		<div class="input-element">
+			<input type="text" placeholder="Disabled text input" disabled>
+		</div>
+		<div class="input-element input-success">
+			<input type="text"placeholder="Successful input">
+			<span class="input-feedback"></span>
+		</div>
+		<div class="input-element input-error">
+			<input type="text"placeholder="Input error">
+			<span class="input-feedback"></span>
+		</div>
 	</div>
+</div>
+<div class="canister">
 	<div class="col-1-2">
 		<h2 class="light">Checkboxes</h2>
 		<div clasS="options-group">
 			<label class="checkbox"><input type="checkbox" value="value_1">Checkbox 1</label>
-			<label class="checkbox"><input type="checkbox" value="value_2" checked>Checkbox 2</label>
-			<label class="checkbox disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
+			<label class="checkbox"><input type="checkbox" value="value_2" checked>Checkbox 2 (checked by default)</label>
+			<label class="checkbox option-disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
+			<label class="checkbox option-success"><input type="checkbox" value="value_4" checked>Checkbox 4 (success)</label>
+			<label class="checkbox option-error"><input type="checkbox" value="value_5">Checkbox 5 (error)</label>
 		</div>
 	</div>
 	<div class="col-1-2">
@@ -58,18 +79,28 @@
 		   	 	<input type="radio" name="radiobuttons" id="radio2" value="Radio Button 2">
 		   	 	Radio Button 2
 			</label>
-		  	<label class="radio disabled">
+		  	<label class="radio option-disabled">
 		    	<input type="radio" name="radiobuttons" id="radio3" value="Radio Button 3" disabled>
 				Radio Button 3 (disabled)
 			</label>
+			<label class="radio option-success">
+		    	<input type="radio" name="radiobuttons" id="radio4" value="Radio Button 4">
+				Radio Button 4 (success)
+			</label>
+			<label class="radio option-error">
+		    	<input type="radio" name="radiobuttons" id="radio5" value="Radio Button 5">
+				Radio Button 5 (error)
+			</label>
 		</div>
 	</div>
+</div>
+<div class="canister">
 	<div class="col-1-2">
 		<h2 class="light">Inline Checkboxes</h2>
 		<div class="options-group inline">
 			<label class="checkbox"><input type="checkbox" value="value_1">Checkbox 1</label>
 			<label class="checkbox"><input type="checkbox" value="value_2" checked>Checkbox 2</label>
-			<label class="checkbox disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
+			<label class="checkbox option-disabled"><input type="checkbox" value="value_3" disabled>Checkbox 3 (disabled)</label>
 		</div>
 	</div>
 	<div class="col-1-2">
@@ -84,22 +115,35 @@
 			   	 	<input type="radio" name="radiobuttonsinline" id="radio2" value="Radio Button 2">
 			   	 	Radio Button 2
 				</label>
-			  	<label class="radio disabled">
+			  	<label class="radio option-disabled">
 			    	<input type="radio" name="radiobuttonsinline" id="radio3" value="Radio Button 3" disabled>
 					Radio Button 3 (disabled)
 				</label>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="canister">
 	<div class="col-1-1">
 		<h2 class="light">Select</h2>
-		<select name="select" class="form-element">
-			<option value="option0" selected>Default value</option> 
-			<option value="option1">Option 1</option> 
-			<option value="option2">Option 2</option>
-			<option value="option3">Option 3</option>
-		</select>
+		<div class="input-element">
+			<select name="select">
+				<option value="option0" selected>Default value</option> 
+				<option value="option1">Option 1</option> 
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+		</div>
+		<div class="input-element">
+			<select name="select" disabled>
+				<option value="option0" selected>Default value</option> 
+				<option value="option1">Option 1</option> 
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+		</div>
 	</div>
+</div>
 </div> </div>
 </article>
 						</div>

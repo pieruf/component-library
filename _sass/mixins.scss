@@ -225,24 +225,10 @@
 	}
 }
 
-@mixin form-element() {
-	box-sizing: border-box;
-    width: 100%;
-    padding: 10px 10px;
-    margin: 10px 0;
-    @include font-size(16);
-    @include line-height(16);
-    color: $color-dark;
-    background-color: $color-light;
-    border: 1px solid $color-grey;
-    border-radius: 5px;
-    @include transition(border-color ease-in-out .10s, -webkit-box-shadow ease-in-out .10s);
-    @include transition(border-color ease-in-out .10s, box-shadow ease-in-out .10s);
-    &:focus {
-	    outline: $color-main;
-	    @include box-shadow(0 0 5px $color-main);
-	    border: 1px solid $color-main;
-    }
+@mixin input-focus($color) {
+	outline: $color;
+    @include box-shadow(0 0 5px $color);
+    border: 1px solid $color;
 }
 
 @mixin option() {
