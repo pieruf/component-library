@@ -1,4 +1,7 @@
 a {
+	text-decoration: none;
+	color: $color-confirm;
+	font-weight: $font-bold;
 	@include link('default');
 	&:visited {
 		@include link('visited');
@@ -11,69 +14,72 @@ a {
 	}
 }
 
-a.textual {
-	@extend a;
-	color: $color-confirm;
+a.button {
 	text-decoration: none;
-	font-weight: $font-bold;
+	color: $color-light;
+	@include line-height(60);
 	&:visited {
-		color: $color-confirm;
+		text-decoration: none;
 	}
 	&:hover {
-		color: $color-warn;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	&:active {
-		color: $color-warn;
-		text-decoration: underline;
+		text-decoration: none;
 	}
-
 }
 
-a.button-sm {
+button {
+	border: none;
+	line-height: initial;
+	margin: 5px 0;
+	outline: none;
+}
+
+.button-sm {
 	@include button($size: 'small');
 }
 
-a.button-md {
+.button-md {
 	@include button($size: 'medium');
 }
 
-a.button-lg {
+.button-lg {
 	@include button($size: 'large');
 }
 
-a.button-sm.disabled {
+.button-sm.disabled {
 	@include button($size: 'small', $disabled: true);
 }
 
-a.button-md.disabled {
+.button-md.disabled {
 	@include button($size: 'medium', $disabled: true);
 }
 
-a.button-lg.disabled {
+.button-lg.disabled {
 	@include button($size: 'large', $disabled: true);
 }
 
-a.button-sm.empty {
-	@include empty-button($size: 'small', $txt-color: $color-main);
+.button-sm.empty {
+	@include empty-button($size: 'small');
 }
 
-a.button-md.empty {
-	@include empty-button($size: 'medium', $txt-color: $color-main);
+.button-md.empty {
+	@include empty-button($size: 'medium');
 }
 
-a.button-lg.empty {
-	@include empty-button($size: 'large', $txt-color: $color-main);
+.button-lg.empty {
+	@include empty-button($size: 'large');
 }
 
-a.button-sm.empty.disabled {
+.button-sm.empty.disabled {
 	@include empty-button($size: 'small', $disabled: true);
 }
 
-a.button-md.empty.disabled {
+.button-md.empty.disabled {
 	@include empty-button($size: 'medium', $disabled: true);
 }
 
-a.button-lg.empty.disabled {
+.button-lg.empty.disabled {
 	@include empty-button($size: 'large', $disabled: true);
 }

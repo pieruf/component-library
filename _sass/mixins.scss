@@ -56,20 +56,16 @@
 }
 
 @mixin button($size: 'medium', $bg-color: $color-main, $txt-color: $color-light, $disabled: false) {
-	text-decoration: none;
+	color: $txt-color;
 	@if ($size == 'small') {
 		padding: 3px 10px;
 		@include font-size(10);
-		@include line-height(30)
-		
 	} @else if ($size == 'medium') {
 		padding: 5px 15px;
 		@include font-size(16);
-		@include line-height(60)
 	} @else if ($size == 'large') {
 		padding: 10px 40px;
 		@include font-size(24);
-		@include line-height(90)
 	}
 	@if ($disabled == true) {
 		@include cursor('disabled');
@@ -83,7 +79,7 @@
 	}
 }
 
-@mixin empty-button ($size: 'medium', $bg-color: transparent, $txt-color: $color-dark, $disabled: false) {
+@mixin empty-button ($size: 'medium', $bg-color: transparent, $txt-color: $color-main, $disabled: false) {
 	@include button($size, $bg-color, $txt-color);
 	@if ($disabled == false) {
 		color: $txt-color;
@@ -108,7 +104,7 @@
 		} @else if ($size == 'medium') {
 			width: 3px;
 		} @else if ($size == 'large') {
-			width: 5px;
+			width: 4px;
 		}
 		style: solid;
 	}
@@ -117,13 +113,14 @@
 @mixin link($state) {
 	color: $color-main;
 	@if ($state == 'hover') {
-		color: $color-confirm;
+		color: $color-warn;
+		text-decoration: underline;
 	} @else if ($state == 'active') {
-		color: $color-confirm;
+		color: $color-warn;
+		text-decoration: underline;
 	} @else if ($state == 'visited') {
-		color: $color-main;
+		color: $color-confirm;
 	}
-	text-decoration: underline;
 }
 
 @mixin font-size($size) {
