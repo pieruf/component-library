@@ -188,21 +188,3 @@ code.block {
     padding: 20px;
     margin: 20px 0;
 }
-
-span.check {
-	&:before {
-		content: "\e876";
-	}
-}
-
-span.error {
-	&:before {
-		content: "\e14c";
-	}
-}
-
-span.warning {
-	&:before {
-		content: "\e001";
-	}
-}

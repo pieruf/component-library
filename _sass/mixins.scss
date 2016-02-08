@@ -236,9 +236,7 @@
     -webkit-appearance: none;
     appearance: none;
     margin-right: 6px;
-    position: relative;
-    top: 5px;
-}
+    vertical-align: middle;}
 
 @mixin box-shadow($args...) {
 	-webkit-box-shadow: $args;
