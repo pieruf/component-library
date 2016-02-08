@@ -119,17 +119,17 @@ code { background-color: #ababab; padding: 0 5px; }
 
 code.block { display: block; padding: 20px; margin: 20px 0; }
 
-.testp { font-family: "Material Icons"; }
+span.check:before { content: "\e876"; }
 
-.check:before { content: "\e876"; }
+span.error:before { content: "\e14c"; }
 
-.error:before { content: "\e14c"; }
-
-.warning:before { content: "\e001"; }
+span.warning:before { content: "\e001"; }
 
 .shell, .full-shell { box-sizing: border-box; width: 100%; padding: 0 1em; }
 
 .full-shell { padding: 0; }
+
+.grid-showcase { margin: 0 10px; }
 
 .canister { width: 100%; padding: 10px 0; }
 .canister:before, .canister:after { content: " "; display: table; }
@@ -271,7 +271,7 @@ tr.highlight { background-color: #1b998b; color: #fbfef9; }
 tr.warn { background-color: #e54b4b; color: #fbfef9; }
 
 .input-element { position: relative; }
-.input-element input, .input-element textarea, .input-element select { height: 40px; box-sizing: border-box; width: 100%; padding: 10px 50px 10px 10px; margin: 5px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: 1px solid #ababab; border-radius: 5px; -webkit-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; }
+.input-element input, .input-element textarea, .input-element select { height: 40px; box-sizing: border-box; width: 100%; padding: 10px 50px 10px 10px; margin: 5px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: 1px solid #ababab; border-radius: 2px; -webkit-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -moz-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -ms-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; }
 .input-element input:focus, .input-element textarea:focus, .input-element select:focus { outline: #3d5a80; -webkit-box-shadow: 0 0 5px #3d5a80; box-shadow: 0 0 5px #3d5a80; border: 1px solid #3d5a80; }
 .input-element input[disabled], .input-element textarea[disabled], .input-element select[disabled] { cursor: not-allowed; background-color: #d1d1d1; }
 .input-element textarea { height: auto; }
@@ -284,7 +284,7 @@ tr.warn { background-color: #e54b4b; color: #fbfef9; }
 .input-element.input-error .input-feedback { background: #e54b4b; }
 .input-element.input-error .input-feedback:before { content: "\e001"; }
 
-.input-feedback { font-family: "Material Icons"; position: absolute; top: 6px; right: 1px; font-size: 2.4rem; line-height: 2.4rem; padding: 7px; color: white; border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+.input-feedback { font-family: "Material Icons"; position: absolute; top: 6px; right: 1px; font-size: 2.4rem; line-height: 2.4rem; padding: 7px; color: white; border-top-right-radius: 1px; border-bottom-right-radius: 1px; }
 
 .options-group { margin: 10px 0; }
 .options-group .checkbox, .options-group .radio { display: block; padding: 5px 0; float: left; clear: both; }

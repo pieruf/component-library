@@ -189,23 +189,19 @@ code.block {
     margin: 20px 0;
 }
 
-.testp {
-	font-family: $material-font;
-}
-
-.check {
+span.check {
 	&:before {
 		content: "\e876";
 	}
 }
 
-.error {
+span.error {
 	&:before {
 		content: "\e14c";
 	}
 }
 
-.warning {
+span.warning {
 	&:before {
 		content: "\e001";
 	}
