@@ -4,10 +4,11 @@ input, textarea, select, button {
 
 .input-element {
 	position: relative;
-	margin-top: rem(16);
+	margin-top: rem(48);
 	label {
 		color: $color-grey;
 	    position: absolute;
+	    display: block;
 	    top: rem(16);
 	    @include font-size(16);
 	    @include line-height(16);
@@ -16,9 +17,10 @@ input, textarea, select, button {
 	
 	label.filled {
 		top: rem(-10);
+		color: $color-main;
 	}
 	
-	input[type="text"], textarea {
+	input[type="text"], textarea, input[type="password"] {
 		width: 100%;
 		height: 40px;
 		box-sizing: border-box;
@@ -29,7 +31,7 @@ input, textarea, select, button {
 	    color: $color-dark;
 	    background-color: $color-light;
 	    border: none;
-	    border-bottom: 2px solid $color-dark;
+	    border-bottom: 1px solid $color-main;
 		&:focus:not([readonly]) {
 			outline: none;
 		    border-bottom: 2px solid $color-main;
@@ -38,9 +40,57 @@ input, textarea, select, button {
 		    color: $color-main;
 		    top: rem(-10);
 	    }
+	    &[disabled] {
+			@include cursor('disabled');
+		}
 	}
 	
 	textarea {
-	    height: auto;
+	    min-height: rem(100);
+	    resize: none;
+	    overflow-y: hidden;
     }
+    
+    .input-icon {
+	    position: absolute;
+	    vertical-align:top;
+	    color: $color-main;
+	    top: rem(10);
+	    & ~ label {
+			margin-left: rem(30);
+			&.filled {
+				margin-left: 0;
+			}
+    	}
+    	
+    	& ~ input {
+	    	padding-left: rem(30);
+    	}
+    	
+    }
+    
+    &.input-name > .input-icon:before {
+		content: "\e7fd";
+	}
+	
+	&.input-email > .input-icon:before {
+		content: "\e0be";
+	}
+	
+	&.input-address > .input-icon:before {
+		content: "\e0c8";
+	}
+	
+	&.input-password > .input-icon:before {
+		content: "\e897";
+	}
+	
+	&.input-phone > .input-icon:before {
+		content: "\e0cd";
+	}
+	
+	&.input-id > .input-icon:before {
+		content: "\e90d";
+	}
+
 }
