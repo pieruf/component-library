@@ -19,38 +19,7 @@ input, textarea, select, button {
 		top: rem(-10);
 		color: $color-main;
 	}
-	
-	input[type="text"], textarea, input[type="password"] {
-		width: 100%;
-		height: 40px;
-		box-sizing: border-box;
-	    padding: 10px 50px 10px 0;
-	    margin: 5px 0;
-	    @include font-size(16);
-	    @include line-height(16);
-	    color: $color-dark;
-	    background-color: $color-light;
-	    border: none;
-	    border-bottom: 1px solid $color-main;
-		&:focus:not([readonly]) {
-			outline: none;
-		    border-bottom: 2px solid $color-main;
-	    }
-		&:focus:not([readonly])+label {
-		    color: $color-main;
-		    top: rem(-10);
-	    }
-	    &[disabled] {
-			@include cursor('disabled');
-		}
-	}
-	
-	textarea {
-	    min-height: rem(100);
-	    resize: none;
-	    overflow-y: hidden;
-    }
-    
+	    
     .input-icon {
 	    position: absolute;
 	    vertical-align:top;
@@ -92,5 +61,63 @@ input, textarea, select, button {
 	&.input-id > .input-icon:before {
 		content: "\e90d";
 	}
+	
+}
 
+input[type="text"], textarea, input[type="password"] {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+    padding: 10px 50px 10px 0;
+    margin: 5px 0;
+    @include font-size(16);
+    @include line-height(16);
+    color: $color-dark;
+    background-color: $color-light;
+    border: none;
+    border-bottom: 1px solid $color-main;
+	&:focus:not([readonly]) {
+		outline: none;
+	    border-bottom: 2px solid $color-main;
+    }
+	&:focus:not([readonly])+label {
+	    color: $color-main;
+	    top: rem(-10);
+    }
+    &[disabled] {
+		@include cursor('disabled');
+	}
+}
+	
+textarea {
+    min-height: rem(100);
+    resize: none;
+    overflow-y: hidden;
+}
+
+.select-element {
+	select {
+		display: none;
+	}
+	position: relative;
+	margin-top: rem(48);
+	ul {
+		display: none;
+		@include transition(3s);
+	}
+	li {
+		border-bottom: 1px solid #d2d2d2;
+		padding: rem(10) 0;
+		@include transition(3s);
+	}
+	.caret {
+		color: $color-main;
+	    position: absolute;
+	    right: 0;
+	    top: rem(18);
+	    font-size: rem(12);
+	}
+	.caret, input, li {
+		cursor: pointer;
+	}
 }

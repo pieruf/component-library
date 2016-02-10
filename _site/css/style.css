@@ -269,11 +269,6 @@ input, textarea, select, button { font-family: "Roboto", Helvetica, sans-serif; 
 .input-element { position: relative; margin-top: 4.8rem; }
 .input-element label { color: #ababab; position: absolute; display: block; top: 1.6rem; font-size: 1.6rem; line-height: 1.6rem; -webkit-transition: 0.2s ease-out; -moz-transition: 0.2s ease-out; -ms-transition: 0.2s ease-out; -o-transition: 0.2s ease-out; transition: 0.2s ease-out; }
 .input-element label.filled { top: -1rem; color: #3d5a80; }
-.input-element input[type="text"], .input-element textarea, .input-element input[type="password"] { width: 100%; height: 40px; box-sizing: border-box; padding: 10px 50px 10px 0; margin: 5px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: none; border-bottom: 1px solid #3d5a80; }
-.input-element input[type="text"]:focus:not([readonly]), .input-element textarea:focus:not([readonly]), .input-element input[type="password"]:focus:not([readonly]) { outline: none; border-bottom: 2px solid #3d5a80; }
-.input-element input[type="text"]:focus:not([readonly]) + label, .input-element textarea:focus:not([readonly]) + label, .input-element input[type="password"]:focus:not([readonly]) + label { color: #3d5a80; top: -1rem; }
-.input-element input[type="text"][disabled], .input-element textarea[disabled], .input-element input[type="password"][disabled] { cursor: not-allowed; }
-.input-element textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 .input-element .input-icon { position: absolute; vertical-align: top; color: #3d5a80; top: 1rem; }
 .input-element .input-icon ~ label { margin-left: 3rem; }
 .input-element .input-icon ~ label.filled { margin-left: 0; }
@@ -284,3 +279,17 @@ input, textarea, select, button { font-family: "Roboto", Helvetica, sans-serif; 
 .input-element.input-password > .input-icon:before { content: "\e897"; }
 .input-element.input-phone > .input-icon:before { content: "\e0cd"; }
 .input-element.input-id > .input-icon:before { content: "\e90d"; }
+
+input[type="text"], textarea, input[type="password"] { width: 100%; height: 40px; box-sizing: border-box; padding: 10px 50px 10px 0; margin: 5px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: none; border-bottom: 1px solid #3d5a80; }
+input[type="text"]:focus:not([readonly]), textarea:focus:not([readonly]), input[type="password"]:focus:not([readonly]) { outline: none; border-bottom: 2px solid #3d5a80; }
+input[type="text"]:focus:not([readonly]) + label, textarea:focus:not([readonly]) + label, input[type="password"]:focus:not([readonly]) + label { color: #3d5a80; top: -1rem; }
+input[type="text"][disabled], textarea[disabled], input[type="password"][disabled] { cursor: not-allowed; }
+
+textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
+
+.select-element { position: relative; margin-top: 4.8rem; }
+.select-element select { display: none; }
+.select-element ul { display: none; -webkit-transition: 3s; -moz-transition: 3s; -ms-transition: 3s; -o-transition: 3s; transition: 3s; }
+.select-element li { border-bottom: 1px solid #d2d2d2; padding: 1rem 0; -webkit-transition: 3s; -moz-transition: 3s; -ms-transition: 3s; -o-transition: 3s; transition: 3s; }
+.select-element .caret { color: #3d5a80; position: absolute; right: 0; top: 1.8rem; font-size: 1.2rem; }
+.select-element .caret, .select-element input, .select-element li { cursor: pointer; }
