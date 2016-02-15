@@ -100,24 +100,43 @@ textarea {
 		display: none;
 	}
 	position: relative;
-	margin-top: rem(48);
+	.select-content {
+		margin-top: rem(-5);
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		@include transition(opacity 0.4s ease-in);
+		&.active-select {
+			opacity: 1;
+			visibility: visible;
+			height: auto;
+			@include transition(opacity 0.4s ease-out);
+		}
+	}
 	ul {
-		display: none;
-		@include transition(3s);
+		padding-top: 0px;
 	}
 	li {
-		border-bottom: 1px solid #d2d2d2;
-		padding: rem(10) 0;
-		@include transition(3s);
+		border-bottom: 1px solid $color-main;
+		padding: rem(10) rem(5);
+		&:hover {
+			background-color: $color-main;
+			color: $color-light;
+		}
 	}
-	.caret {
+	.caret-icon, .caret-icon-active {
 		color: $color-main;
 	    position: absolute;
 	    right: 0;
-	    top: rem(18);
-	    font-size: rem(12);
+	    top: rem(15);
 	}
-	.caret, input, li {
+	.caret-icon:before {
+		content: "\e5cf";
+	}
+	.caret-icon-active:before {
+		content: "\e5cd";
+	}
+	.caret-icon, input, li {
 		cursor: pointer;
 	}
 }

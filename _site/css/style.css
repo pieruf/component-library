@@ -287,9 +287,14 @@ input[type="text"][disabled], textarea[disabled], input[type="password"][disable
 
 textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 
-.select-element { position: relative; margin-top: 4.8rem; }
+.select-element { position: relative; }
 .select-element select { display: none; }
-.select-element ul { display: none; -webkit-transition: 3s; -moz-transition: 3s; -ms-transition: 3s; -o-transition: 3s; transition: 3s; }
-.select-element li { border-bottom: 1px solid #d2d2d2; padding: 1rem 0; -webkit-transition: 3s; -moz-transition: 3s; -ms-transition: 3s; -o-transition: 3s; transition: 3s; }
-.select-element .caret { color: #3d5a80; position: absolute; right: 0; top: 1.8rem; font-size: 1.2rem; }
-.select-element .caret, .select-element input, .select-element li { cursor: pointer; }
+.select-element .select-content { margin-top: -0.5rem; opacity: 0; visibility: hidden; height: 0; -webkit-transition: opacity 0.4s ease-in; -moz-transition: opacity 0.4s ease-in; -ms-transition: opacity 0.4s ease-in; -o-transition: opacity 0.4s ease-in; transition: opacity 0.4s ease-in; }
+.select-element .select-content.active-select { opacity: 1; visibility: visible; height: auto; -webkit-transition: opacity 0.4s ease-out; -moz-transition: opacity 0.4s ease-out; -ms-transition: opacity 0.4s ease-out; -o-transition: opacity 0.4s ease-out; transition: opacity 0.4s ease-out; }
+.select-element ul { padding-top: 0px; }
+.select-element li { border-bottom: 1px solid #3d5a80; padding: 1rem 0.5rem; }
+.select-element li:hover { background-color: #3d5a80; color: #fbfef9; }
+.select-element .caret-icon, .select-element .caret-icon-active { color: #3d5a80; position: absolute; right: 0; top: 1.5rem; }
+.select-element .caret-icon:before { content: "\e5cf"; }
+.select-element .caret-icon-active:before { content: "\e5cd"; }
+.select-element .caret-icon, .select-element input, .select-element li { cursor: pointer; }

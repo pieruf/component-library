@@ -31,16 +31,25 @@ $(document).on('change', input_fields, function () {
 function createSelect(select) {
 	var id = select.attr('id');
 	var parentdiv = select.parent()
-	var caret = $(document.createElement("span"));
-	var input = $(document.createElement("input"));
-	var ul = $(document.createElement("ul"));
+	// var caret = $(document.createElement("span"));
+	var caret = $(document.createElement("i"));
+	caret.addClass("material-icons caret-icon");
 	
-	caret.addClass("caret");
-	caret.text("▼");
+	var input = $(document.createElement("input"));
+	var selectcontent = $(document.createElement("div"));
+	selectcontent.addClass("select-content");
+	
+	var ul = $(document.createElement("ul"));
+	selectcontent.append(ul);
 	
 	input.attr({ type: 'text', readonly: 'true', value: 'Choose an option'})
 	input.on('click', function () {
-		ul.toggle();
+		selectcontent.toggleClass("active-select");
+		caret.toggleClass("caret-icon-active");
+	});
+	caret.on('click', function () {
+		selectcontent.toggleClass("active-select");
+		caret.toggleClass("caret-icon-active");
 	});
 	
 	ul.attr('id', id);
@@ -53,7 +62,8 @@ function createSelect(select) {
 		    $('#' + id).find("option").attr('selected', false);
 		    var selected = $(this).text();
 		    input.attr('value', selected);
-		    ul.toggle();
+		    selectcontent.toggleClass("active-select");
+		    caret.toggleClass("caret-icon-active");
 		    // Select the right option of the original select element
 		    $("#" + id + " option").filter(function () {
 			    return $(this).html() == selected; 
@@ -64,5 +74,5 @@ function createSelect(select) {
 		
 	parentdiv.append(caret);
 	parentdiv.append(input);
-	parentdiv.append(ul);
+	parentdiv.append(selectcontent);
 }
