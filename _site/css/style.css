@@ -298,3 +298,17 @@ textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 .select-element .caret-icon:before { content: "\e5cf"; }
 .select-element .caret-icon-active:before { content: "\e5cd"; }
 .select-element .caret-icon, .select-element input, .select-element li { cursor: pointer; }
+
+.options-group { display: block; }
+.options-group.inline .option-element { display: inline-block; padding-right: 1.6rem; }
+
+.option-element { position: relative; margin: 1.6rem 0; }
+.option-element input[type="radio"], .option-element input[type="checkbox"] { visibility: hidden; position: absolute; left: 0; }
+.option-element input[type="radio"] + label, .option-element input[type="checkbox"] + label { display: inline-block; cursor: pointer; padding-left: 2.4rem; }
+.option-element input[type="radio"]:disabled + label, .option-element input[type="checkbox"]:disabled + label { color: #ababab; }
+.option-element input[type="radio"]:disabled + label:before, .option-element input[type="checkbox"]:disabled + label:before { border-color: #ababab; }
+.option-element input[type="radio"]:disabled + label, .option-element input[type="radio"]:disabled + label:before, .option-element input[type="checkbox"]:disabled + label, .option-element input[type="checkbox"]:disabled + label:before { cursor: not-allowed; }
+.option-element input[type="checkbox"] + label:before { content: ' '; position: absolute; top: -1px; left: 0; width: 1.2rem; height: 1.2rem; border: 2px solid #3d5a80; -webkit-transition: 0.2s; -moz-transition: 0.2s; -ms-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
+.option-element input[type="checkbox"]:checked + label:before { content: ' '; border-top-color: transparent; border-left-color: transparent; width: 0.6rem; transform-origin: 120% 80%; -webkit-transform: rotate(35deg); -moz-transform: rotate(35deg); -ms-transform: rotate(35deg); -o-transform: rotate(35deg); transform: rotate(35deg); }
+.option-element input[type="radio"] + label:before { content: ' '; position: absolute; top: -1px; left: 0; width: 1.2rem; height: 1.2rem; border: 2px solid #3d5a80; border-radius: 9999px; background-color: transparent; -webkit-transition: 0.4s ease-out; -moz-transition: 0.4s ease-out; -ms-transition: 0.4s ease-out; -o-transition: 0.4s ease-out; transition: 0.4s ease-out; }
+.option-element input[type="radio"]:checked + label:before { content: ' '; background-color: #3d5a80; }

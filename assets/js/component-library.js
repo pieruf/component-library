@@ -1,4 +1,11 @@
 var input_fields = 'input[type="text"], input[type="password"], textarea';
+$(document).on('change', input_fields, function () {
+	if($(this).val().length != 0 || $(this).attr('placeholder') != undefined) {
+		$(this).siblings('label').addClass('filled');
+	} else {
+		$(this).siblings('label').removeClass('filled');
+	}
+});
 
 $(document).ready(function() {
    
@@ -15,14 +22,6 @@ $(document).ready(function() {
 	    createSelect($(this));
 	});
 	
-});
-
-$(document).on('change', input_fields, function () {
-	if($(this).val().length != 0 || $(this).attr('placeholder') != undefined) {
-		$(this).siblings('label').addClass('filled');
-	} else {
-		$(this).siblings('label').removeClass('filled');
-	}
 });
 
 /*
