@@ -13,13 +13,11 @@ input, textarea, select, button {
 	    @include font-size(16);
 	    @include line-height(16);
 	    @include transition(.2s ease-out);
+	    &.filled {
+		    top: rem(-10);
+			color: $color-main;
+	    }
 	}
-	
-	label.filled {
-		top: rem(-10);
-		color: $color-main;
-	}
-	    
     .input-icon {
 	    position: absolute;
 	    vertical-align:top;
@@ -62,6 +60,20 @@ input, textarea, select, button {
 		content: "\e90d";
 	}
 	
+	&.input-valid {
+	    @include validation-style(true);
+    }
+    
+	&.input-invalid {
+		@include validation-style(false);
+		&:after {
+			content: "This input is not valid";
+			color: $color-warn;
+			@include font-size(12);
+			position: absolute;
+		}
+    }
+    
 }
 
 input[type="text"], textarea, input[type="password"] {

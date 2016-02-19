@@ -228,6 +228,27 @@
     border: 1px solid $color;
 }
 
+@mixin validation-style($valid) {
+	$color-validation: $color-main;
+	@if ($valid) {
+		$color-validation: $color-confirm;
+	} @else {
+		$color-validation: $color-warn;
+	}
+	label, .input-icon {
+    	color: $color-validation;
+    }
+    input {
+	    border-bottom: 1px solid $color-validation;
+	    &:focus:not([readonly]) {
+		    border-bottom: 2px solid $color-validation;
+	    }
+		&:focus:not([readonly])+label {
+		    color: $color-validation;
+	    }
+	}
+}
+
 @mixin option() {
 	width: rem($font-size);
 	height: rem($font-size);

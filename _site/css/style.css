@@ -279,6 +279,15 @@ input, textarea, select, button { font-family: "Roboto", Helvetica, sans-serif; 
 .input-element.input-password > .input-icon:before { content: "\e897"; }
 .input-element.input-phone > .input-icon:before { content: "\e0cd"; }
 .input-element.input-id > .input-icon:before { content: "\e90d"; }
+.input-element.input-valid label, .input-element.input-valid .input-icon { color: #1b998b; }
+.input-element.input-valid input { border-bottom: 1px solid #1b998b; }
+.input-element.input-valid input:focus:not([readonly]) { border-bottom: 2px solid #1b998b; }
+.input-element.input-valid input:focus:not([readonly]) + label { color: #1b998b; }
+.input-element.input-invalid label, .input-element.input-invalid .input-icon { color: #e54b4b; }
+.input-element.input-invalid input { border-bottom: 1px solid #e54b4b; }
+.input-element.input-invalid input:focus:not([readonly]) { border-bottom: 2px solid #e54b4b; }
+.input-element.input-invalid input:focus:not([readonly]) + label { color: #e54b4b; }
+.input-element.input-invalid:after { content: "This input is not valid"; color: #e54b4b; font-size: 1.2rem; position: absolute; }
 
 input[type="text"], textarea, input[type="password"] { width: 100%; height: 40px; box-sizing: border-box; padding: 10px 50px 10px 0; margin: 5px 0; font-size: 1.6rem; line-height: 1.6rem; color: #0d1b1e; background-color: #fbfef9; border: none; border-bottom: 1px solid #3d5a80; }
 input[type="text"]:focus:not([readonly]), textarea:focus:not([readonly]), input[type="password"]:focus:not([readonly]) { outline: none; border-bottom: 2px solid #3d5a80; }

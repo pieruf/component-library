@@ -9,6 +9,7 @@ $(document).on('change', input_fields, function () {
 
 $(document).ready(function() {
    
+   // Check for filled input elements
    $(input_fields).each(function(index, element) {
 	    if ($(element).val().length > 0 || $(this).attr('placeholder') != undefined) {
 	      $(this).siblings('label').addClass('filled');
@@ -21,6 +22,62 @@ $(document).ready(function() {
 	$('select').each(function() {
 	    createSelect($(this));
 	});
+	
+	// Validate email address
+	var emailaddressvalidator = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+	$('.input-email').each(function () {
+		$(this).find('input[type=text]').bind('input propertychange', function() {
+			if ($(this).val()) {
+				if (emailaddressvalidator.test($(this).val())) {
+					$(this).parent().removeClass('input-invalid');
+					$(this).parent().addClass('input-valid');
+				} else {
+					$(this).parent().removeClass('input-valid');
+					$(this).parent().addClass('input-invalid');
+				}
+			} else {
+				$(this).parent().removeClass('input-invalid');
+				$(this).parent().removeClass('input-valid');
+			}
+		});
+	});
+	
+	// Validate phone numbers (+prefix and a minimum of six numbers)
+	var phonenumbervalidator = /^(\+\s*[0-9]{2,3})*\s*[0-9,\s]{6,}$/;
+	$('.input-phone').each(function () {
+		$(this).find('input[type=text]').bind('input propertychange', function() {
+			if ($(this).val()) {
+				if (phonenumbervalidator.test($(this).val())) {
+					$(this).parent().removeClass('input-invalid');
+					$(this).parent().addClass('input-valid');
+				} else {
+					$(this).parent().removeClass('input-valid');
+					$(this).parent().addClass('input-invalid');
+				}
+			} else {
+				$(this).parent().removeClass('input-invalid');
+				$(this).parent().removeClass('input-valid');
+			}
+		});
+	});
+	
+	// Set the checked attribute on checkboxes based on label clicks
+	$('input[type=checkbox]').each(function () {
+		$(this).on('click', function() {
+			if ($(this).attr('checked')) {
+				$(this).removeAttr('checked');
+			} else {
+				$(this).attr('checked', true);
+			}
+		});
+	});
+	
+	/* Radiobutton debug 
+	$('input[type=radio]').each(function () {
+		$(this).on('click', function() {
+			alert($('[name='+groupname+']:checked').val()); 
+		});
+	});*/
 	
 });
 
