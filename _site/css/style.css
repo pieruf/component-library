@@ -321,3 +321,12 @@ textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 .option-element input[type="checkbox"]:checked + label:before { content: ' '; border-top-color: transparent; border-left-color: transparent; width: 0.6rem; transform-origin: 120% 80%; -webkit-transform: rotate(35deg); -moz-transform: rotate(35deg); -ms-transform: rotate(35deg); -o-transform: rotate(35deg); transform: rotate(35deg); }
 .option-element input[type="radio"] + label:before { content: ' '; position: absolute; top: -1px; left: 0; width: 1.2rem; height: 1.2rem; border: 2px solid #3d5a80; border-radius: 9999px; background-color: transparent; -webkit-transition: 0.4s ease-out; -moz-transition: 0.4s ease-out; -ms-transition: 0.4s ease-out; -o-transition: 0.4s ease-out; transition: 0.4s ease-out; }
 .option-element input[type="radio"]:checked + label:before { content: ' '; background-color: #3d5a80; }
+
+.tab-group { position: relative; }
+.tab-group li { float: left; display: block; }
+.tab-group input[type="radio"] { position: absolute; visibility: hidden; }
+.tab-group label { float: left; display: block; padding: 10px 20px; font-size: 2.4rem; color: #fbfef9; text-transform: uppercase; background: #3d5a80; position: relative; cursor: pointer; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.tab-group label:hover { background: #2d425d; }
+.tab-group .tab-content { float: left; box-sizing: border-box; padding: 2rem; display: none; width: 100%; font-size: 1.6rem; line-height: 2.4rem; color: #fbfef9; background: #24364c; }
+.tab-group [id^="tab"]:checked + label { background: #24364c; }
+.tab-group [id^="tab"]:checked ~ [id^="tab-content"] { display: block; }
