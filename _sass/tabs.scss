@@ -11,7 +11,7 @@
 	label {
 		float: left;
 	    display: block;
-	    padding: 10px 20px;
+	    padding: rem(10) rem(20);
 	    @include font-size(24);
 	    color: $color-light;
 	    text-transform: uppercase;
@@ -31,9 +31,10 @@
 	    width: 100%;
 	    @include font-size(16);
 		@include line-height(24);
-	    //position: absolute;
+	    position: absolute;
 	    color: $color-light;
 	    background: darken($color-main, 15);
+	    top: rem(44);
   	}
   	[id^="tab"] {
 	  	&:checked + label {

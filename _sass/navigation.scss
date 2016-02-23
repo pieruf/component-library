@@ -1,0 +1,78 @@
+$navheight: 100px;
+nav {
+	position: relative;
+	.logo {
+		float: left;
+	    height: $navheight;
+	    width: 250px;
+	    background: $color-confirm;
+	}
+	margin-bottom: 40px;
+	height: $navheight;
+	line-height: rem(16);
+	position: relative;
+	background-color: $color-main;
+	> ul {
+		padding-top: rem(44);
+		li {
+			padding: rem(16);
+			position: relative;
+			float: left;
+			&:hover {
+				background-color: $color-confirm;
+				> ul {
+					display: block;
+				}
+			}
+		}
+		
+		a {
+			text-decoration: none;
+			color: $color-light;
+			&:visited {
+				text-decoration: none;
+				color: $color-light;
+			}
+			&:hover {
+				text-decoration: none;
+				
+			}
+			&:active {
+				text-decoration: none;
+				color: $color-light;
+			}
+		}
+		
+		ul {
+			display:none;
+			position:absolute;
+			top: rem(46);
+			left:0;
+			
+			li {
+				background-color: $color-confirm;
+				float:none;
+				min-width: 120px;
+				&:hover {
+					background-color: $color-main;
+				}
+			}
+			
+			a {
+				color: $color-light;
+				padding:0 rem(16);
+				&:visited {
+					color: $color-light;
+				}
+				&:hover {
+					color: $color-light;
+				}
+				&:active {
+					color: $color-light;
+				}
+			}
+		}
+		
+	}
+	
+}

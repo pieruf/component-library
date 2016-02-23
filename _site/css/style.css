@@ -169,6 +169,24 @@ code.block { display: block; padding: 20px; margin: 20px 0; }
 
 .grid-filler { background-color: #ababab; border: 1px solid #5f5f5f; padding-top: 20px; padding-bottom: 20px; }
 
+nav { position: relative; margin-bottom: 40px; height: 100px; line-height: 1.6rem; position: relative; background-color: #3d5a80; }
+nav .logo { float: left; height: 100px; width: 250px; background: #1b998b; }
+nav > ul { padding-top: 4.4rem; }
+nav > ul li { padding: 1.6rem; position: relative; float: left; }
+nav > ul li:hover { background-color: #1b998b; }
+nav > ul li:hover > ul { display: block; }
+nav > ul a { text-decoration: none; color: #fbfef9; }
+nav > ul a:visited { text-decoration: none; color: #fbfef9; }
+nav > ul a:hover { text-decoration: none; }
+nav > ul a:active { text-decoration: none; color: #fbfef9; }
+nav > ul ul { display: none; position: absolute; top: 4.6rem; left: 0; }
+nav > ul ul li { background-color: #1b998b; float: none; min-width: 120px; }
+nav > ul ul li:hover { background-color: #3d5a80; }
+nav > ul ul a { color: #fbfef9; padding: 0 1.6rem; }
+nav > ul ul a:visited { color: #fbfef9; }
+nav > ul ul a:hover { color: #fbfef9; }
+nav > ul ul a:active { color: #fbfef9; }
+
 a { text-decoration: none; color: #1b998b; font-weight: 700; color: #3d5a80; }
 a:visited { color: #3d5a80; color: #1b998b; }
 a:hover { color: #3d5a80; color: #e54b4b; text-decoration: underline; }
@@ -325,8 +343,8 @@ textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 .tab-group { position: relative; }
 .tab-group li { float: left; display: block; }
 .tab-group input[type="radio"] { position: absolute; visibility: hidden; }
-.tab-group label { float: left; display: block; padding: 10px 20px; font-size: 2.4rem; color: #fbfef9; text-transform: uppercase; background: #3d5a80; position: relative; cursor: pointer; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.tab-group label { float: left; display: block; padding: 1rem 2rem; font-size: 2.4rem; color: #fbfef9; text-transform: uppercase; background: #3d5a80; position: relative; cursor: pointer; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
 .tab-group label:hover { background: #2d425d; }
-.tab-group .tab-content { float: left; box-sizing: border-box; padding: 2rem; display: none; width: 100%; font-size: 1.6rem; line-height: 2.4rem; color: #fbfef9; background: #24364c; }
+.tab-group .tab-content { float: left; box-sizing: border-box; padding: 2rem; display: none; width: 100%; font-size: 1.6rem; line-height: 2.4rem; position: absolute; color: #fbfef9; background: #24364c; top: 4.4rem; }
 .tab-group [id^="tab"]:checked + label { background: #24364c; }
 .tab-group [id^="tab"]:checked ~ [id^="tab-content"] { display: block; }
