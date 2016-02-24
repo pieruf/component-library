@@ -1,32 +1,96 @@
-$navheight: 100px;
+$nav-height: 135px;
+
 nav {
 	position: relative;
-	.logo {
-		float: left;
-	    height: $navheight;
-	    width: 250px;
-	    background: $color-confirm;
-	}
-	margin-bottom: 40px;
-	height: $navheight;
+}
+
+
+.nav-head {
 	line-height: rem(16);
+	float: left;
+	overflow-y: hidden;
+	height: $nav-height;
 	position: relative;
 	background-color: $color-main;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+	#nav-hamburger {
+		font-family: $material-font;
+		color: $color-light;
+		@include font-size(48);
+		float: right;
+		cursor: pointer;
+		&:before {
+			content: '\e5d2';
+			position: absolute;
+		    top: 60px;
+		    right: rem(16);
+		}
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: block;	
+		}
+	}
+	.logo {
+		background-color: $color-main;
+	    img {
+		    height: $nav-height;
+	    }
+	}
+	
+}
+
+.nav-menu {
+	height: $nav-height;
+	width: 100%;
+	background-color: $color-main;
+	z-index: 999;
 	> ul {
-		padding-top: rem(44);
+		padding-top: 79px;
 		li {
-			padding: rem(16);
+			cursor: pointer;
 			position: relative;
 			float: left;
 			&:hover {
-				background-color: $color-confirm;
-				> ul {
-					display: block;
+				background-color: lighten($color-main, 33%);
+				// Show submenu on hover on bigger screens
+				@media screen and (min-width: 769px) {
+					ul {
+						display: block;
+					}
+				}
+			}
+			@media screen and (max-width: 768px) {
+				float: none;
+				background-color: $color-main;
+				position: static;
+			}
+			.nav-more {
+				float: right;
+				font-family: $material-font;
+				color: $color-light;
+				position: relative;
+				@include font-size(32);
+				&:before {
+					content: '\e5d3';
+					position: absolute;
+				    top: 16px;
+				    right: rem(16);
+				}
+				&.nav-more-expanded:before {
+					content: '\e5d4';
+				}
+				display: none;
+				@media screen and (max-width: 768px) {
+					display: block;	
 				}
 			}
 		}
 		
 		a {
+			display: inline-block;
+			padding: 16px;
 			text-decoration: none;
 			color: $color-light;
 			&:visited {
@@ -45,34 +109,75 @@ nav {
 		
 		ul {
 			display:none;
+			@media screen and (max-width: 768px) {
+				display: none;
+				position: static;
+				padding-top: 0;
+			}
+			&.nav-submenu-mobile {
+				display: block;
+			}
 			position:absolute;
 			top: rem(46);
 			left:0;
 			
 			li {
-				background-color: $color-confirm;
+				
 				float:none;
 				min-width: 120px;
 				&:hover {
 					background-color: $color-main;
+					@media screen and (max-width: 768px) {
+						background-color: lighten($color-main, 33%);
+					}
+				}
+				@media screen and (max-width: 768px) {
+					float: none;
+					background-color: $color-main;
+					color: $color-light;
+					position: relative;
+					width: 100%;
+					overflow: hidden;
 				}
 			}
 			
 			a {
+				width: 100%;
+				background-color: $color-main;
 				color: $color-light;
-				padding:0 rem(16);
 				&:visited {
 					color: $color-light;
 				}
 				&:hover {
+					background-color: lighten($color-main, 33%);
 					color: $color-light;
 				}
 				&:active {
 					color: $color-light;
 				}
+				@media screen and (max-width: 768px) {
+					background-color: $color-main;
+					&:hover {
+						background-color: lighten($color-main, 33%);
+					}
+					&:before {
+						font-family: $material-font;
+						content: ' - ';
+						
+					}
+				}
 			}
 		}
 		
 	}
+	@media screen and (max-width: 768px) {
+		display: none;	
+	}
 	
+}
+
+.nav-mobile {
+	display: block;
+	width: 100%;
+	background-color: $color-main;
 }

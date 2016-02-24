@@ -79,6 +79,19 @@ $(document).ready(function() {
 		});
 	});*/
 	
+	/* Mobile menu */
+	$('#nav-hamburger').on('click', function() {
+		$('.nav-menu').toggleClass('nav-mobile');
+	});
+	
+	
+	$('.nav-menu ul li').each(function () { 
+		$(this).on('click', function() {
+			$(this).find('ul').toggleClass('nav-submenu-mobile');
+			$(this).find('i').toggleClass('nav-more-expanded');
+		});
+	});
+	
 });
 
 /*

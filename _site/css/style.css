@@ -169,23 +169,47 @@ code.block { display: block; padding: 20px; margin: 20px 0; }
 
 .grid-filler { background-color: #ababab; border: 1px solid #5f5f5f; padding-top: 20px; padding-bottom: 20px; }
 
-nav { position: relative; margin-bottom: 40px; height: 100px; line-height: 1.6rem; position: relative; background-color: #3d5a80; }
-nav .logo { float: left; height: 100px; width: 250px; background: #1b998b; }
-nav > ul { padding-top: 4.4rem; }
-nav > ul li { padding: 1.6rem; position: relative; float: left; }
-nav > ul li:hover { background-color: #1b998b; }
-nav > ul li:hover > ul { display: block; }
-nav > ul a { text-decoration: none; color: #fbfef9; }
-nav > ul a:visited { text-decoration: none; color: #fbfef9; }
-nav > ul a:hover { text-decoration: none; }
-nav > ul a:active { text-decoration: none; color: #fbfef9; }
-nav > ul ul { display: none; position: absolute; top: 4.6rem; left: 0; }
-nav > ul ul li { background-color: #1b998b; float: none; min-width: 120px; }
-nav > ul ul li:hover { background-color: #3d5a80; }
-nav > ul ul a { color: #fbfef9; padding: 0 1.6rem; }
-nav > ul ul a:visited { color: #fbfef9; }
-nav > ul ul a:hover { color: #fbfef9; }
-nav > ul ul a:active { color: #fbfef9; }
+nav { position: relative; }
+
+.nav-head { line-height: 1.6rem; float: left; overflow-y: hidden; height: 135px; position: relative; background-color: #3d5a80; }
+@media screen and (max-width: 768px) { .nav-head { width: 100%; } }
+.nav-head #nav-hamburger { font-family: "Material Icons"; color: #fbfef9; font-size: 4.8rem; float: right; cursor: pointer; display: none; }
+.nav-head #nav-hamburger:before { content: '\e5d2'; position: absolute; top: 60px; right: 1.6rem; }
+@media screen and (max-width: 768px) { .nav-head #nav-hamburger { display: block; } }
+.nav-head .logo { background-color: #3d5a80; }
+.nav-head .logo img { height: 135px; }
+
+.nav-menu { height: 135px; width: 100%; background-color: #3d5a80; z-index: 999; }
+.nav-menu > ul { padding-top: 79px; }
+.nav-menu > ul li { cursor: pointer; position: relative; float: left; }
+.nav-menu > ul li:hover { background-color: #98afce; }
+@media screen and (min-width: 769px) { .nav-menu > ul li:hover ul { display: block; } }
+@media screen and (max-width: 768px) { .nav-menu > ul li { float: none; background-color: #3d5a80; position: static; } }
+.nav-menu > ul li .nav-more { float: right; font-family: "Material Icons"; color: #fbfef9; position: relative; font-size: 3.2rem; display: none; }
+.nav-menu > ul li .nav-more:before { content: '\e5d3'; position: absolute; top: 16px; right: 1.6rem; }
+.nav-menu > ul li .nav-more.nav-more-expanded:before { content: '\e5d4'; }
+@media screen and (max-width: 768px) { .nav-menu > ul li .nav-more { display: block; } }
+.nav-menu > ul a { display: inline-block; padding: 16px; text-decoration: none; color: #fbfef9; }
+.nav-menu > ul a:visited { text-decoration: none; color: #fbfef9; }
+.nav-menu > ul a:hover { text-decoration: none; }
+.nav-menu > ul a:active { text-decoration: none; color: #fbfef9; }
+.nav-menu > ul ul { display: none; position: absolute; top: 4.6rem; left: 0; }
+@media screen and (max-width: 768px) { .nav-menu > ul ul { display: none; position: static; padding-top: 0; } }
+.nav-menu > ul ul.nav-submenu-mobile { display: block; }
+.nav-menu > ul ul li { float: none; min-width: 120px; }
+.nav-menu > ul ul li:hover { background-color: #3d5a80; }
+@media screen and (max-width: 768px) { .nav-menu > ul ul li:hover { background-color: #98afce; } }
+@media screen and (max-width: 768px) { .nav-menu > ul ul li { float: none; background-color: #3d5a80; color: #fbfef9; position: relative; width: 100%; overflow: hidden; } }
+.nav-menu > ul ul a { width: 100%; background-color: #3d5a80; color: #fbfef9; }
+.nav-menu > ul ul a:visited { color: #fbfef9; }
+.nav-menu > ul ul a:hover { background-color: #98afce; color: #fbfef9; }
+.nav-menu > ul ul a:active { color: #fbfef9; }
+@media screen and (max-width: 768px) { .nav-menu > ul ul a { background-color: #3d5a80; }
+  .nav-menu > ul ul a:hover { background-color: #98afce; }
+  .nav-menu > ul ul a:before { font-family: "Material Icons"; content: ' - '; } }
+@media screen and (max-width: 768px) { .nav-menu { display: none; } }
+
+.nav-mobile { display: block; width: 100%; background-color: #3d5a80; }
 
 a { text-decoration: none; color: #1b998b; font-weight: 700; color: #3d5a80; }
 a:visited { color: #3d5a80; color: #1b998b; }
