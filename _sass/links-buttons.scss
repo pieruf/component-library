@@ -1,6 +1,6 @@
 a {
 	text-decoration: none;
-	color: $color-confirm;
+	color: $color-main;
 	font-weight: $font-bold;
 	@include link('default');
 	&:visited {

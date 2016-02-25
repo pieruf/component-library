@@ -72,5 +72,5 @@
 }
 
 .grid-filler {
-	@include filler($color-grey, 50px, 50px, 1px, $color-dark-grey);
+	@include filler(lighten($color-main, 50%), 50px, 50px, 1px, lighten($color-main, 33%));
 }

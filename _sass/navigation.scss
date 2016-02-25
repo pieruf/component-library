@@ -77,9 +77,11 @@ nav {
 					position: absolute;
 				    top: 16px;
 				    right: rem(16);
+				    @include transition(0.5s);
 				}
 				&.nav-more-expanded:before {
 					content: '\e5d4';
+					@include transition(0.5s);
 				}
 				display: none;
 				@media screen and (max-width: 768px) {
@@ -109,6 +111,9 @@ nav {
 		
 		ul {
 			display:none;
+			position:absolute;
+			top: rem(46);
+			left:0;
 			@media screen and (max-width: 768px) {
 				display: none;
 				position: static;
@@ -117,16 +122,14 @@ nav {
 			&.nav-submenu-mobile {
 				display: block;
 			}
-			position:absolute;
-			top: rem(46);
-			left:0;
 			
 			li {
-				
 				float:none;
 				min-width: 120px;
+				overflow: hidden;
 				&:hover {
 					background-color: $color-main;
+					
 					@media screen and (max-width: 768px) {
 						background-color: lighten($color-main, 33%);
 					}
@@ -139,6 +142,7 @@ nav {
 					width: 100%;
 					overflow: hidden;
 				}
+				
 			}
 			
 			a {

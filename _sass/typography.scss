@@ -157,7 +157,7 @@ s {
 
 blockquote {
 	@include line-height(20);
-    border-left: 5px solid $color-grey;
+    border-left: 5px solid lighten($color-main, 33%);
     padding: 0 0 0 20px;
     margin: 20px 0;
 }
@@ -180,7 +180,7 @@ q {
 }
 
 code {
-	background-color: $color-grey;
+	background-color: lighten($color-main, 33%);
 	padding: 0 5px;
 }
 code.block {

@@ -69,7 +69,7 @@
 	}
 	@if ($disabled == true) {
 		@include cursor('disabled');
-		background-color: $color-grey;
+		background-color: lighten($bg-color, 50%);
 	} @else {
 		background-color: $bg-color;
 		color: $txt-color;
@@ -88,7 +88,7 @@
 			color: $color-light;
 		}
 	} @else {
-		color: $color-grey;
+		color: lighten($color-main, 50%);
 		&:hover, &:active {
 			background-color: $bg-color;
 		}
@@ -97,7 +97,7 @@
 		@if ($disabled == false) {
 			color: $txt-color;
 		} @else {
-			color: $color-grey;
+			color: lighten($color-main, 50%);
 		}
 		@if ($size == 'small') {
 			width: 2px;
@@ -113,13 +113,13 @@
 @mixin link($state) {
 	color: $color-main;
 	@if ($state == 'hover') {
-		color: $color-warn;
+		color: lighten($color-main, 33%);
 		text-decoration: underline;
 	} @else if ($state == 'active') {
-		color: $color-warn;
+		color: lighten($color-main, 33%);
 		text-decoration: underline;
 	} @else if ($state == 'visited') {
-		color: $color-confirm;
+		color: $color-main;
 	}
 }
 
@@ -143,11 +143,12 @@
 
 @mixin highlight($type: "normal") {
 	@if ($type == "normal") {
-		background-color: $color-confirm;
+		background-color: lighten($color-main, 33%);
+		color: $color-dark;
 	} @else if ($type == "warning") {
 		background-color: $color-warn;
+		color: $color-light;
 	}
-    color: #fff;
     padding: 2px 5px;
 }
 
