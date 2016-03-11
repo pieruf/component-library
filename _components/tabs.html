@@ -7,35 +7,59 @@ id: tabs
 
 <div class="canister">
 	<div class="col-1-1">
-		<div class="tab-group" style="height:200px">
-			<div class="tab">
-				<input type="radio" name="tab" id="tab-a" checked/>
-				<label for="tab-a">Tab A</label>
+		<h2 class="light">Tabs with text</h2>
+		<div class="tab-group" id="tabgroupA">
+			
+			<div class="tab-names">
+				<a class="tab-name-active" data-tab="tab1">Tab #1</a>
+				<a data-tab="tab2">Tab #2</a>
+				<a data-tab="tab3">Tab #3</a>
+			</div>  
+		    	
+		    <div class="tabs">	  
+				<div class="tab-content tab-active" id="tab1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 				
-				<div class="tab-content" id="tab-content-1">
-						<p>
-						 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
+				<div class="tab-content" id="tab2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-			</div>
-			<div class="tab">
-				<input type="radio" name="tab" id="tab-b"/>
-					<label for="tab-b">Tab B</label>
-				<div class="tab-content" id="tab-content-2">
-					<p>
-					 	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
+				
+					
+				<div class="tab-content" id="tab3">
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			
 				</div>
-			</div>
-			<div class="tab">
-				<input type="radio" name="tab" id="tab-c"/>
-					<label for="tab-c">Tab C</label>
-				<div class="tab-content" id="tab-content-4">
-					<p>
-					 	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
+		    </div>
+		    
+		</div>
+	</div>
+	
+	
+	<div class="col-1-1">
+		<h2 class="light">Tabs with icons</h2>
+		<div class="tab-group" id="tabgroupB">
+			
+			<div class="tab-names">
+				<a class="tab-name-active" data-tab="tabface"><i class="material-icons">face</i></a>
+				<a data-tab="tabflight"><i class="material-icons">flight_takeoff</i></a>
+				<a data-tab="tablang"><i class="material-icons">language</i></a>
+			</div>  
+		    	
+		    <div class="tabs">	  
+				<div class="tab-content tab-active" id="tabface">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			</div>
+				
+				<div class="tab-content" id="tabflight">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				
+					
+				<div class="tab-content" id="tablang">
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			
+				</div>
+		    </div>
+		    
 		</div>
 	</div>
 </div>

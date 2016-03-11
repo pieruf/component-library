@@ -92,6 +92,23 @@ $(document).ready(function() {
 		});
 	});
 	
+	$('.tab-names a').each(function () { 
+		$(this).on('click', function() {
+			var parentid = $(this).parent().parent().attr('id');
+			var tabid = $(this).attr('data-tab');
+			
+			$('#' + parentid).find('.tab-names a').each(function (){
+				$(this).removeClass('tab-name-active');
+			});
+			$(this).addClass('tab-name-active');
+			
+			$('#' + parentid).find('.tab-content').each(function (){
+				$(this).removeClass('tab-active');
+			});
+			$('#'+tabid).addClass('tab-active');
+		});
+	});
+	
 });
 
 /*

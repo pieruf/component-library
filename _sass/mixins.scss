@@ -135,6 +135,7 @@
 	@include font-size($size);
 	@include line-height(32);
 	font-weight: $weight;
+	margin-bottom: rem(10);
 }
 
 @mixin hr($variant: "solid") {
