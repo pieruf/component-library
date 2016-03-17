@@ -95,6 +95,7 @@ input[type="text"], textarea, input[type="password"] {
 	&:focus:not([readonly])+label {
 	    color: $color-main;
 	    top: rem(-10);
+	    margin-left: 0;
     }
     &[disabled] {
 		@include cursor('disabled');
