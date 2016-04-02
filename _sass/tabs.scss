@@ -1,5 +1,6 @@
 .tab-group {
 	position: relative;
+	margin-bottom: 30px;
 	.tab-content {
 		clear: both;
 		display: none;
@@ -29,6 +30,14 @@
 			a {
 				width: 100%;
 			}
+		}
+	}
+	
+	&.tab-light {
+		.tab-content {
+			background-color: $color-light;
+			border: 2px solid $color-main;
+			color: $color-main;
 		}
 	}
 }

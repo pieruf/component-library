@@ -366,10 +366,11 @@ textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
 .option-element input[type="radio"] + label:before { content: ' '; position: absolute; top: -1px; left: 0; width: 1.2rem; height: 1.2rem; border: 2px solid #3d5a80; border-radius: 9999px; background-color: transparent; -webkit-transition: 0.4s ease-out; -moz-transition: 0.4s ease-out; -ms-transition: 0.4s ease-out; -o-transition: 0.4s ease-out; transition: 0.4s ease-out; }
 .option-element input[type="radio"]:checked + label:before { content: ' '; background-color: #3d5a80; }
 
-.tab-group { position: relative; }
+.tab-group { position: relative; margin-bottom: 30px; }
 .tab-group .tab-content { clear: both; display: none; background-color: #3d5a80; color: #fbfef9; padding: 1rem; }
 .tab-group .tab-active { display: block; }
 .tab-group .tab-names a { background-color: #8da7c9; cursor: pointer; color: #fbfef9; padding: 1rem; float: left; text-decoration: none; }
 .tab-group .tab-names a.tab-name-active { background-color: #3d5a80; }
 @media screen and (max-width: 479px) { .tab-group .tab-names { overflow-x: hidden; }
   .tab-group .tab-names a { width: 100%; } }
+.tab-group.tab-light .tab-content { background-color: #fbfef9; border: 2px solid #3d5a80; color: #3d5a80; }
