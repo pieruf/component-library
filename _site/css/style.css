@@ -100,8 +100,6 @@ em { font-style: italic; }
 
 u { text-decoration: underline; }
 
-mark { background-color: #98afce; color: #0d1b1e; padding: 2px 5px; }
-
 mark.warning { background-color: #e54b4b; color: #fbfef9; padding: 2px 5px; }
 
 s { text-decoration: line-through; }
@@ -114,10 +112,6 @@ span.quote-auth:before { content: "\2014 \00a0"; }
 q { font-style: italic; }
 q:before { content: "\00AB"; }
 q:after { content: "\00BB"; }
-
-code { background-color: #98afce; padding: 0 5px; }
-
-code.block { display: block; padding: 20px; margin: 20px 0; }
 
 .shell, .full-shell { box-sizing: border-box; width: 100%; padding: 0 1em; }
 

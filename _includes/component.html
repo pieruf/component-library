@@ -2,8 +2,33 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> {{ entry.title }} </h2>
-			<!-- <p class="component-description"> {{ entry.description }} </p> -->
+			<div class="tab-group tab-light" id="{{entry.id}}">
+			
+			<div class="tab-names">
+				<a class="tab-name-active" data-tab="{{entry.id}}_component">Module Components</a>
+				<a data-tab="{{entry.id}}_code">Module HTML</a>
+			</div>  
+		    	
+		    <div class="tabs">	  
+				<div class="tab-content tab-active" id="{{entry.id}}_component">
+					<p>
+						{{ entry.content }}
+					</p>
+				</div>
+				
+				<div class="tab-content" id="{{entry.id}}_code">
+					
+						{% highlight html %}
+							{{ entry.content }}
+						{% endhighlight %}
+					
+				</div>
+				
+		    </div>
+		    
+		</div>
 		</div>
 	</div>
-	<div> {{ entry.content }} </div>
+	
+	
 </article>

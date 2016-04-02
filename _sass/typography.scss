@@ -143,10 +143,6 @@ u {
 	text-decoration: underline;
 }
 
-mark {
-	@include highlight;
-}
-
 mark.warning {
 	@include highlight('warning');
 }
@@ -177,14 +173,4 @@ q {
 	&:after {
 		content: "\00BB";
 	}
-}
-
-code {
-	background-color: lighten($color-main, 33%);
-	padding: 0 5px;
-}
-code.block {
-    display: block;
-    padding: 20px;
-    margin: 20px 0;
 }
