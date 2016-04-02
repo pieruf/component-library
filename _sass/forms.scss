@@ -2,6 +2,14 @@ input, textarea, select, button {
 	font-family: $font-stack; // Fixes Mozilla issue
 }
 
+input:required, textarea:required {
+	&+label {
+		&:after {
+			content: ' *';
+		}
+	}
+}
+
 .input-element {
 	position: relative;
 	margin-top: rem(48);

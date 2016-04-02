@@ -109,6 +109,19 @@ $(document).ready(function() {
 		});
 	});
 	
+	// Autoresize text-areas
+	$('textarea').each(function() {
+		var textarea = $(this);
+    	var offset = this.offsetHeight - this.clientHeight;
+		$(this).on('keyup input', function() {
+			resizeTextarea(this);
+		});
+		var resizeTextarea = function(area) {
+			$(area).css('height', 'auto');
+        	$(area).css('height', area.scrollHeight + offset);
+		};
+	});
+	
 });
 
 /*
