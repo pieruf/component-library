@@ -120,11 +120,31 @@ $(document).ready(function() {
 			resizeTextarea(this);
 		});
 		var resizeTextarea = function(area) {
-			$(area).css('height', 'auto');
-        	$(area).css('height', area.scrollHeight + offset);
+			$(area).css('height', 'initial');
+			if (textarea.val().length != 0) {
+				$(area).removeClass('not-resized');
+				$(area).css('height', area.scrollHeight + offset);
+			} else {
+				$(area).addClass('not-resized');
+			}
 		};
 	});
 	
+	// Textarea remaining characters check
+	$('textarea').each(function () {
+		$(this).keyup(function() {
+			var id = $(this).attr('id');
+			var maxLength = $(this).attr('maxlength');
+		    var currentLength = $(this).val().length;
+		    var remainingLength = maxLength - currentLength;
+		    $('#' + id + '-feedback').text(remainingLength + ' characters left');
+		    if (remainingLength == 0) {
+			    $('#' + id + '-feedback').addClass('no-characters-left');
+		    } else {
+			    $('#' + id + '-feedback').removeClass('no-characters-left');
+		    }
+		});	
+	});
 });
 
 /*

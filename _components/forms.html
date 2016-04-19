@@ -30,13 +30,15 @@ id: forms
 		</div>
         
 		<div class="input-element">
-			<textarea id="text-area-placeholder" placeholder="Insert your text here"></textarea>
+			<textarea id="text-area-placeholder" placeholder="Insert your text here" maxlength="500"></textarea>
 			<label for="text-area-placeholder">Text area with placeholder text</label>
+			<span class="textarea-feedback" id="text-area-placeholder-feedback">500 characters left</span>
 		</div>
 		
 		<div class="input-element">
-			<textarea id="text-area"></textarea>
+			<textarea id="text-area" maxlength="500"></textarea>
 			<label for="text-area">Text area without placeholder text</label>
+			<span class="textarea-feedback" id="text-area-feedback">500 characters left</span>
 		</div>
 		
 		<div class="input-element">

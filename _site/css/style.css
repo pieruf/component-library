@@ -332,7 +332,10 @@ input[type="text"]:focus:not([readonly]), textarea:focus:not([readonly]), input[
 input[type="text"]:focus:not([readonly]) + label, textarea:focus:not([readonly]) + label, input[type="password"]:focus:not([readonly]) + label { color: #3d5a80; top: -1rem; margin-left: 0; }
 input[type="text"][disabled], textarea[disabled], input[type="password"][disabled] { cursor: not-allowed; }
 
-textarea { min-height: 10rem; resize: none; overflow-y: hidden; }
+textarea { /*min-height: rem(100);
+resize: none;
+overflow-y: hidden;*/ overflow-y: hidden; line-height: 2.4rem; -moz-box-sizing: border-box; box-sizing: border-box; resize: none; }
+textarea.not-resized { line-height: 1rem; height: 3rem !important; }
 
 .select-element { position: relative; }
 .select-element select { display: none; }
