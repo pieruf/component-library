@@ -97,15 +97,18 @@ $(document).ready(function() {
 			var parentid = $(this).parent().parent().attr('id');
 			var tabid = $(this).attr('data-tab');
 			
-			$('#' + parentid).find('.tab-names a').each(function (){
+			$('#' + parentid + ' > .tab-names a').each(function (){
 				$(this).removeClass('tab-name-active');
 			});
 			$(this).addClass('tab-name-active');
-			
-			$('#' + parentid).find('.tab-content').each(function (){
+			$('#' + parentid + ' > .tabs > .tab-content').each(function (){
 				$(this).removeClass('tab-active');
+				if ($(this).attr('id') == tabid) {
+					$(this).addClass('tab-active');
+				}
 			});
-			$('#'+tabid).addClass('tab-active');
+			
+			//$('#' + parentid + ' #' + tabid).addClass('tab-active');
 		});
 	});
 	
