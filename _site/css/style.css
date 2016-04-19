@@ -146,6 +146,10 @@ q:after { content: "\00BB"; }
 @media screen and (min-width: 480px) { .col-1-8 { width: 50%; float: left; } }
 @media screen and (min-width: 768px) { .col-1-8 { width: 12.5%; float: left; } }
 
+.col-1-12 { box-sizing: border-box; padding: 1rem; width: 100%; }
+@media screen and (min-width: 480px) { .col-1-12 { width: 50%; float: left; } }
+@media screen and (min-width: 768px) { .col-1-12 { width: 8.33333%; float: left; } }
+
 .col-2-3 { box-sizing: border-box; padding: 1rem; width: 100%; }
 @media screen and (min-width: 768px) { .col-2-3 { width: 66.66667%; float: left; } }
 

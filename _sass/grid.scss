@@ -51,6 +51,10 @@
 	@include col(1, 8);
 }
 
+.col-1-12 {
+	@include col(1, 12);
+}
+
 .col-2-3 {
 	@include col(2, 3);
 }
