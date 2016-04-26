@@ -136,7 +136,8 @@ $(document).ready(function() {
 			var id = $(this).attr('id');
 			var maxLength = $(this).attr('maxlength');
 		    var currentLength = $(this).val().length;
-		    var remainingLength = maxLength - currentLength;
+		    var lineBreaks = (($(this).val()).match(/\n/g)||[]).length;
+		    var remainingLength = maxLength - (currentLength + lineBreaks);
 		    $('#' + id + '-feedback').text(remainingLength + ' characters left');
 		    if (remainingLength == 0) {
 			    $('#' + id + '-feedback').addClass('no-characters-left');

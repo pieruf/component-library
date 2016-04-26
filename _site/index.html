@@ -21,13 +21,12 @@
 			
 		</header>
 		<div class="shell">
-			<!-- Main content -->			
+			<!-- Main content -->	
+			<h1> UI Components Library </h1>		
 			<section>
 				<!-- Components -->
 			
-				<div>
 					<div>
-						<h1> Components </h1>
 						
 						
 					
@@ -35,20 +34,10 @@
 							<article class="component">
 	<div class="canister">
 		<div class="col-1-1">
-			<h2> Form elements </h2>
-			<div class="tab-group tab-light" id="forms">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="forms_component">Module Components</a>
-				<a data-tab="forms_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="forms_component">
-					<p>
-						<div class="canister">
+			<h2> Forms </h2>
+			<div class="canister">
 	<div class="col-1-1">
-		<h2 class="light">Text inputs</h2>
+		<h3 class="light">Text inputs</h3>
 		
 		<div class="input-element">
 			<input id="text-input" type="text">
@@ -146,7 +135,7 @@
 
 <div class="canister">
 	<div class="col-1-1">
-		<h2 class="light">Select</h2>
+		<h3 class="light">Select</h3>
 	</div>
 	<div class="col-1-3">
 		<div class="select-element">
@@ -163,7 +152,7 @@
 
 <div class="canister">
 	<div class="col-1-2">
-		<h2 class="light">Checkboxes</h2>
+		<h3 class="light">Checkboxes</h3>
 		<div class="options-group">
 			<div class="option-element">
 				<input type="checkbox" id="check1" />
@@ -184,7 +173,7 @@
 		</div>
 	</div>
 	<div class="col-1-2">
-		<h2 class="light">Radio Buttons</h2>		
+		<h3 class="light">Radio Buttons</h3>		
 		<div class="options-group">
 			<div class="option-element">
 				<input type="radio" name="radiobuttons" id="radio1" value="r1" checked/>
@@ -207,7 +196,7 @@
 </div>
 <div class="canister">
 	<div class="col-1-2">
-		<h2 class="light">Inline Checkboxes</h2>
+		<h3 class="light">Inline Checkboxes</h3>
 		<div class="options-group inline">
 			<div class="option-element">
 				<input type="checkbox" id="checkin1" />
@@ -228,7 +217,7 @@
 		</div>
 	</div>
 	<div class="col-1-2">
-		<h2 class="light">Inline Radio Buttons</h2>
+		<h3 class="light">Inline Radio Buttons</h3>
 		<div class="options-group inline">
 			<div class="option-element">
 				<input type="radio" name="radiobuttonsinline" id="radioin1" checked/>
@@ -251,227 +240,8 @@
 </div>
 
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="forms_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Text inputs<span class="nt">&lt;/h2&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"text-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-input"</span><span class="nt">&gt;</span>Generic textual input<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"text-input-placeholder"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"This is the placeholder text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-input-placeholder"</span><span class="nt">&gt;</span>Textual input with placeholder text<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"text-input-required"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"This is the placeholder text"</span> <span class="na">required</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-input-required"</span><span class="nt">&gt;</span>Required textual input<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password-input"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">placeholder=</span><span class="s">"Type your password here"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password-input"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-        
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"text-area-placeholder"</span> <span class="na">placeholder=</span><span class="s">"Insert your text here"</span> <span class="na">maxlength=</span><span class="s">"500"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-area-placeholder"</span><span class="nt">&gt;</span>Text area with placeholder text<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"textarea-feedback"</span> <span class="na">id=</span><span class="s">"text-area-placeholder-feedback"</span><span class="nt">&gt;</span>500 characters left<span class="nt">&lt;/span&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"text-area"</span> <span class="na">maxlength=</span><span class="s">"500"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-area"</span><span class="nt">&gt;</span>Text area without placeholder text<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"textarea-feedback"</span> <span class="na">id=</span><span class="s">"text-area-feedback"</span><span class="nt">&gt;</span>500 characters left<span class="nt">&lt;/span&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled text input"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		
-	<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-name"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"name-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name-input"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-email"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"email-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email-input"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-address"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"address-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"address-input"</span><span class="nt">&gt;</span>Address<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-password"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password-input-2"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password-input-2"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-phone"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"phone-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"phone-input"</span><span class="nt">&gt;</span>Phone<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-element input-id"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons input-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-input"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/label&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>	
-<span class="nt">&lt;/div&gt;</span>
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Select<span class="nt">&lt;/h2&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select-element"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select001"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
-				<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
-				<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option 03<span class="nt">&lt;/option&gt;</span>
-			<span class="nt">&lt;/select&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Checkboxes<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"options-group"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"check1"</span> <span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"check1"</span><span class="nt">&gt;</span>Checkbox 1<span class="nt">&lt;/label&gt;</span>				
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"check2"</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"check2"</span><span class="nt">&gt;</span>Checkbox 2<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"check3"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"check3"</span><span class="nt">&gt;</span>Checkbox 3 (checked by default)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"check4"</span> <span class="na">disabled</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"check4"</span><span class="nt">&gt;</span>Checkbox 4 (disabled)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Radio Buttons<span class="nt">&lt;/h2&gt;</span>		
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"options-group"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttons"</span> <span class="na">id=</span><span class="s">"radio1"</span> <span class="na">value=</span><span class="s">"r1"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio1"</span><span class="nt">&gt;</span>Radio 1 (checked by default)<span class="nt">&lt;/label&gt;</span>				
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttons"</span> <span class="na">id=</span><span class="s">"radio2"</span> <span class="na">value=</span><span class="s">"r2"</span> <span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio2"</span><span class="nt">&gt;</span>Radio 2<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttons"</span> <span class="na">id=</span><span class="s">"radio3"</span> <span class="na">value=</span><span class="s">"r3"</span> <span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio3"</span><span class="nt">&gt;</span>Radio 3<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttons"</span> <span class="na">id=</span><span class="s">"radio4"</span> <span class="na">value=</span><span class="s">"r4"</span> <span class="na">disabled</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio4"</span><span class="nt">&gt;</span>Radio 4 (disabled)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Inline Checkboxes<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"options-group inline"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkin1"</span> <span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkin1"</span><span class="nt">&gt;</span>Checkbox 1<span class="nt">&lt;/label&gt;</span>				
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkin2"</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkin2"</span><span class="nt">&gt;</span>Checkbox 2<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkin3"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkin3"</span><span class="nt">&gt;</span>Checkbox 3 (checked by default)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkin4"</span> <span class="na">disabled</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkin4"</span><span class="nt">&gt;</span>Checkbox 4 (disabled)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Inline Radio Buttons<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"options-group inline"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttonsinline"</span> <span class="na">id=</span><span class="s">"radioin1"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioin1"</span><span class="nt">&gt;</span>Radio 1 (checked by default)<span class="nt">&lt;/label&gt;</span>				
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttonsinline"</span> <span class="na">id=</span><span class="s">"radioin2"</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioin2"</span><span class="nt">&gt;</span>Radio 2<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttonsinline"</span> <span class="na">id=</span><span class="s">"radioin3"</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioin3"</span><span class="nt">&gt;</span>Radio 3<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"option-element"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radiobuttonsinline"</span> <span class="na">id=</span><span class="s">"radioin4"</span> <span class="na">disabled</span><span class="nt">/&gt;</span>
-				<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioin4"</span><span class="nt">&gt;</span>Radio 4 (disabled)<span class="nt">&lt;/label&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -481,17 +251,7 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Grid </h2>
-			<div class="tab-group tab-light" id="grid">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="grid_component">Module Components</a>
-				<a data-tab="grid_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="grid_component">
-					<p>
-						<div class="grid-showcase">
+			<div class="grid-showcase">
 	<div class="canister">
 		<div class="col-1-1 grid-filler">
 			1/1
@@ -678,209 +438,8 @@
 		</div>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="grid_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-showcase"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1 grid-filler"</span><span class="nt">&gt;</span>
-			1/1
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2 grid-filler"</span><span class="nt">&gt;</span>
-			1/2
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2 grid-filler"</span><span class="nt">&gt;</span>
-			1/2
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3 grid-filler"</span><span class="nt">&gt;</span>
-			1/3
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3 grid-filler"</span><span class="nt">&gt;</span>
-			1/3
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3 grid-filler"</span><span class="nt">&gt;</span>
-			1/3
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-5 grid-filler"</span><span class="nt">&gt;</span>
-			1/5
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-5 grid-filler"</span><span class="nt">&gt;</span>
-			1/5
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-5 grid-filler"</span><span class="nt">&gt;</span>
-			1/5
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-5 grid-filler"</span><span class="nt">&gt;</span>
-			1/5
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-5 grid-filler"</span><span class="nt">&gt;</span>
-			1/5
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-6 grid-filler"</span><span class="nt">&gt;</span>
-			1/6
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-					
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-8 grid-filler"</span><span class="nt">&gt;</span>
-			1/8
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-12 grid-filler"</span><span class="nt">&gt;</span>
-			1/12
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3 grid-filler"</span><span class="nt">&gt;</span>
-			1/3
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3 grid-filler"</span><span class="nt">&gt;</span>
-			2/3
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3-4 grid-filler"</span><span class="nt">&gt;</span>
-			3/4
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2 grid-filler"</span><span class="nt">&gt;</span>
-			1/2
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-4 grid-filler"</span><span class="nt">&gt;</span>
-			1/4
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-5 grid-filler"</span><span class="nt">&gt;</span>
-			2/5
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3-5 grid-filler"</span><span class="nt">&gt;</span>
-			3/5
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -890,17 +449,7 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Links and Buttons </h2>
-			<div class="tab-group tab-light" id="links-buttons">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="links-buttons_component">Module Components</a>
-				<a data-tab="links-buttons_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="links-buttons_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-3">
 		<h3 class="light">Links</h3>
 		<p><a href="#">This</a> is a link.</p>
@@ -917,39 +466,8 @@
 	</div>
 	
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="links-buttons_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Links<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>This<span class="nt">&lt;/a&gt;</span> is a link.<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-lg"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-md"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-sm"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-lg disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-md disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-sm disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Buttons (empty)<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-lg empty"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-md empty"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-sm empty"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-lg empty disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-md empty disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button-sm empty disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -959,19 +477,9 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Lists </h2>
-			<div class="tab-group tab-light" id="lists">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="lists_component">Module Components</a>
-				<a data-tab="lists_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="lists_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-2">
-		<h2 class="light">Unordered list</h2>
+		<h3 class="light">Unordered list</h3>
 		<ul>
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -981,7 +489,7 @@
 		</ul>
 	</div>
 	<div class="col-1-2">
-		<h2 class="light">Ordered list</h2>
+		<h3 class="light">Ordered list</h3>
 		<ol>
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -993,7 +501,7 @@
 </div>
 <div class="canister">
 	<div class="col-1-3">
-		<h2 class="light">Decimal list</h2>
+		<h3 class="light">Decimal list</h3>
 		<ol class="decimal">
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -1003,7 +511,7 @@
 		</ol>
 	</div>
 	<div class="col-1-3">
-		<h2 class="light">Roman list</h2>
+		<h3 class="light">Roman list</h3>
 		<ol class="roman">
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -1013,7 +521,7 @@
 		</ol>
 	</div>
 	<div class="col-1-3">
-		<h2 class="light">Letteral list</h2>
+		<h3 class="light">Letteral list</h3>
 		<ol class="letters">
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -1025,7 +533,7 @@
 </div>
 <div class="canister">
 	<div class="col-1-1">
-		<h2 class="light">Inline unordered list</h2>
+		<h3 class="light">Inline unordered list</h3>
 		<ul class="inline">
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -1035,7 +543,7 @@
 		</ul>
 	</div>
 	<div class="col-1-1">
-		<h2 class="light">Inline ordered list</h2>
+		<h3 class="light">Inline ordered list</h3>
 		<ol class="decimal inline">
 			<li>1st element</li>
 			<li>2nd element</li>
@@ -1047,7 +555,7 @@
 </div>
 <div class="canister">
 	<div class="col-1-1">
-		<h2 class="light">Description list</h2>
+		<h3 class="light">Description list</h3>
 		<dl>
 			<dt>
 				Term No. 1
@@ -1072,125 +580,8 @@
 		</dl>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="lists_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Unordered list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ul&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ul&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-2"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Ordered list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ol&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ol&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Decimal list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"decimal"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ol&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Roman list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"roman"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ol&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Letteral list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"letters"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ol&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Inline unordered list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"inline"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ul&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Inline ordered list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"decimal inline"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>1st element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>2nd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>3rd element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>4th element<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>5th element<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ul&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Description list<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;dl&gt;</span>
-			<span class="nt">&lt;dt&gt;</span>
-				Term No. 1
-			<span class="nt">&lt;/dt&gt;</span>
-			<span class="nt">&lt;dd&gt;</span>
-				Lorem ipsum dolor sit amet.
-			<span class="nt">&lt;/dd&gt;</span>
-	      	
-	      	<span class="nt">&lt;dt&gt;</span>
-				Term No. 2
-			<span class="nt">&lt;/dt&gt;</span>
-			<span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"txt-justify"</span><span class="nt">&gt;</span>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			<span class="nt">&lt;/dd&gt;</span>
-			
-			<span class="nt">&lt;dt&gt;</span>
-				Term No. 3
-			<span class="nt">&lt;/dt&gt;</span>
-			<span class="nt">&lt;dd&gt;</span>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-			<span class="nt">&lt;/dd&gt;</span>
-		<span class="nt">&lt;/dl&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -1200,17 +591,7 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Navigation </h2>
-			<div class="tab-group tab-light" id="navigation">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="navigation_component">Module Components</a>
-				<a data-tab="navigation_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="navigation_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-1">
 		<nav class="navbar">
 			<div class="nav-head">
@@ -1235,47 +616,8 @@
 		</nav>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="navigation_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-head"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"logo"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"img/logo.png"</span><span class="nt">/&gt;&lt;/a&gt;</span>
-				<span class="nt">&lt;i</span> <span class="na">id=</span><span class="s">"nav-hamburger"</span><span class="nt">&gt;&lt;/i&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-menu"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;ul&gt;</span>
-					<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-				  	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-				  	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/a&gt;&lt;i</span> <span class="na">class=</span><span class="s">"nav-more"</span><span class="nt">&gt;&lt;/i&gt;</span>
-					  	<span class="nt">&lt;ul&gt;</span>
-						  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>A<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>B<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-						  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>C<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					  	<span class="nt">&lt;/ul&gt;</span>
-				  	<span class="nt">&lt;/li&gt;</span>
-				  	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-				  <span class="nt">&lt;/ul&gt;</span>
-				<span class="nt">&lt;/ul&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/nav&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -1285,17 +627,7 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Tables </h2>
-			<div class="tab-group tab-light" id="tables">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="tables_component">Module Components</a>
-				<a data-tab="tables_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="tables_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-1">
 		<h3 class="light">Default Table</h3>
 		<table>
@@ -1504,231 +836,8 @@
 		</table>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="tables_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Default Table<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;table&gt;</span>
-			<span class="nt">&lt;tbody&gt;</span>
-				<span class="nt">&lt;thead&gt;</span>
-					<span class="nt">&lt;tr&gt;</span>
-						<span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;/thead&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>4<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>5<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>6<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/tbody&gt;</span>
-		<span class="nt">&lt;/table&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Striped Table<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"striped"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;tbody&gt;</span>
-				<span class="nt">&lt;thead&gt;</span>
-					<span class="nt">&lt;tr&gt;</span>
-						<span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;/thead&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>4<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>5<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>6<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/tbody&gt;</span>
-		<span class="nt">&lt;/table&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Hover rows<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"hover"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;tbody&gt;</span>
-				<span class="nt">&lt;thead&gt;</span>
-					<span class="nt">&lt;tr&gt;</span>
-						<span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;/thead&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>4<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>5<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>6<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/tbody&gt;</span>
-		<span class="nt">&lt;/table&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Highlighted rows<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;table&gt;</span>
-			<span class="nt">&lt;tbody&gt;</span>
-				<span class="nt">&lt;thead&gt;</span>
-					<span class="nt">&lt;tr&gt;</span>
-						<span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-						<span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;/thead&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>4<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"warn"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;th&gt;</span>5<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-				<span class="nt">&lt;tr&gt;</span>
-					<span class="nt">&lt;th&gt;</span>6<span class="nt">&lt;/th&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-					<span class="nt">&lt;td&gt;</span>Table entry<span class="nt">&lt;/td&gt;</span>
-				<span class="nt">&lt;/tr&gt;</span>
-			<span class="nt">&lt;/tbody&gt;</span>
-		<span class="nt">&lt;/table&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -1738,19 +847,9 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Tab elements </h2>
-			<div class="tab-group tab-light" id="tabelements">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="tabelements_component">Module Components</a>
-				<a data-tab="tabelements_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="tabelements_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-1">
-		<h2 class="light">Tabs with text</h2>
+		<h3 class="light">Tabs with text</h3>
 		<div class="tab-group" id="tabgroupA">
 			
 			<div class="tab-names">
@@ -1777,7 +876,7 @@
 		</div>
 		
 		
-		<h2 class="light">Light tabs with text</h2>
+		<h3 class="light">Light tabs with text</h3>
 		<div class="tab-group tab-light" id="tabgroupB">
 			
 			<div class="tab-names">
@@ -1807,7 +906,7 @@
 	
 	
 	<div class="col-1-1">
-		<h2 class="light">Tabs with icons</h2>
+		<h3 class="light">Tabs with icons</h3>
 		<div class="tab-group" id="tabgroupC">
 			
 			<div class="tab-names">
@@ -1834,108 +933,8 @@
 		</div>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="tabelements_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Tabs with text<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-group"</span> <span class="na">id=</span><span class="s">"tabgroupA"</span><span class="nt">&gt;</span>
-			
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-names"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab-name-active"</span> <span class="na">data-tab=</span><span class="s">"taba1"</span><span class="nt">&gt;</span>Tab A1<span class="nt">&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"taba2"</span><span class="nt">&gt;</span>Tab A2<span class="nt">&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"taba3"</span><span class="nt">&gt;</span>Tab A3<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>  
-		    	
-		    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs"</span><span class="nt">&gt;</span>	  
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content tab-active"</span> <span class="na">id=</span><span class="s">"taba1"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"taba2"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-					
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"taba3"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>			
-				<span class="nt">&lt;/div&gt;</span>
-		    <span class="nt">&lt;/div&gt;</span>
-		    
-		<span class="nt">&lt;/div&gt;</span>
-		
-		
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Light tabs with text<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-group tab-light"</span> <span class="na">id=</span><span class="s">"tabgroupB"</span><span class="nt">&gt;</span>
-			
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-names"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab-name-active"</span> <span class="na">data-tab=</span><span class="s">"tabb1"</span><span class="nt">&gt;</span>Tab B1<span class="nt">&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"tabb2"</span><span class="nt">&gt;</span>Tab B2<span class="nt">&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"tabb3"</span><span class="nt">&gt;</span>Tab B3<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>  
-		    	
-		    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs"</span><span class="nt">&gt;</span>	  
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content tab-active"</span> <span class="na">id=</span><span class="s">"tabb1"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"tabb2"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-					
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"tabb3"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>			
-				<span class="nt">&lt;/div&gt;</span>
-		    <span class="nt">&lt;/div&gt;</span>
-		    
-		<span class="nt">&lt;/div&gt;</span>
-		
-	<span class="nt">&lt;/div&gt;</span>
-	
-	
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Tabs with icons<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-group"</span> <span class="na">id=</span><span class="s">"tabgroupC"</span><span class="nt">&gt;</span>
-			
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-names"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab-name-active"</span> <span class="na">data-tab=</span><span class="s">"tabface"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>face<span class="nt">&lt;/i&gt;&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"tabflight"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>flight_takeoff<span class="nt">&lt;/i&gt;&lt;/a&gt;</span>
-				<span class="nt">&lt;a</span> <span class="na">data-tab=</span><span class="s">"tablang"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span>language<span class="nt">&lt;/i&gt;&lt;/a&gt;</span>
-			<span class="nt">&lt;/div&gt;</span>  
-		    	
-		    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs"</span><span class="nt">&gt;</span>	  
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content tab-active"</span> <span class="na">id=</span><span class="s">"tabface"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"tabflight"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-				
-					
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span> <span class="na">id=</span><span class="s">"tablang"</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;p&gt;</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>			
-				<span class="nt">&lt;/div&gt;</span>
-		    <span class="nt">&lt;/div&gt;</span>
-		    
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						
@@ -1945,17 +944,7 @@
 	<div class="canister">
 		<div class="col-1-1">
 			<h2> Typography </h2>
-			<div class="tab-group tab-light" id="typography">
-			
-			<div class="tab-names">
-				<a class="tab-name-active" data-tab="typography_component">Module Components</a>
-				<a data-tab="typography_code">Module HTML</a>
-			</div>  
-		    	
-		    <div class="tabs">	  
-				<div class="tab-content tab-active" id="typography_component">
-					<p>
-						<div class="canister">
+			<div class="canister">
 	<div class="col-1-3">
 		<h1 class="bold">Headings h1</h1>
 		<h1>Headings h1</h1>
@@ -1992,7 +981,7 @@
 
 <div class="canister">
 	<div class="col-1-1">	
-		<h2 class="light">Paragraphs</h2>
+		<h3 class="light">Paragraphs</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p class="txt-left"><strong>Left aligned paragraph</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<p class="txt-center"><strong>Centered text</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -2000,92 +989,22 @@
 		<p class="txt-justify"><strong>Justified</strong> paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.at. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 	</div>
 	<div class="col-1-1">
-		<h2 class="light">Quotes</h2>
+		<h3 class="light">Quotes</h3>
 		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="quote-auth">Some imaginary guy.</span></blockquote>
 		<p><q>There is also this way to mark a direct quote from someone inside a normal paragraph</q> quoth the raven.</p>
 	</div>
 	<div class="col-1-1">
-		<h2 class="light">Text Tweaks</h2>
+		<h3 class="light">Text Tweaks</h3>
 		<p>This is a <strong>strong text</strong>, and this is an <em>emphasized</em> word. <s>This isn't relevant anymore.</s></p>
 		<p>Please check out this <u>underlined</u> word, but pay more attention to <mark class="warning">this one</mark>!</p>
 	</div>
 </div>
-					</p>
-				</div>
-				
-				<div class="tab-content" id="typography_code">
-					
-						<figure class="highlight"><pre><code class="language-html" data-lang="html">							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h1<span class="nt">&lt;/h1&gt;</span>
-		<span class="nt">&lt;h1&gt;</span>Headings h1<span class="nt">&lt;/h1&gt;</span>
-		<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h1<span class="nt">&lt;/h1&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h2<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;h2&gt;</span>Headings h2<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h2<span class="nt">&lt;/h2&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h3<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;h3&gt;</span>Headings h3<span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h3<span class="nt">&lt;/h3&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h4<span class="nt">&lt;/h4&gt;</span>
-		<span class="nt">&lt;h4&gt;</span>Headings h4<span class="nt">&lt;/h4&gt;</span>
-		<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h4<span class="nt">&lt;/h4&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h5<span class="nt">&lt;/h5&gt;</span>
-		<span class="nt">&lt;h5&gt;</span>Headings h5<span class="nt">&lt;/h5&gt;</span>
-		<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h5<span class="nt">&lt;/h5&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Headings h6<span class="nt">&lt;/h6&gt;</span>
-		<span class="nt">&lt;h6&gt;</span>Headings h6<span class="nt">&lt;/h6&gt;</span>
-		<span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Headings h6<span class="nt">&lt;/h6&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"canister"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>	
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Paragraphs<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
-		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-left"</span><span class="nt">&gt;&lt;strong&gt;</span>Left aligned paragraph<span class="nt">&lt;/strong&gt;</span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="nt">&lt;/p&gt;</span>
-		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-center"</span><span class="nt">&gt;&lt;strong&gt;</span>Centered text<span class="nt">&lt;/strong&gt;</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
-		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-right"</span><span class="nt">&gt;&lt;strong&gt;</span>Right aligned paragraph<span class="nt">&lt;/strong&gt;</span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="nt">&lt;/p&gt;</span>
-		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-justify"</span><span class="nt">&gt;&lt;strong&gt;</span>Justified<span class="nt">&lt;/strong&gt;</span> paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.at. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Quotes<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;blockquote&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"quote-auth"</span><span class="nt">&gt;</span>Some imaginary guy.<span class="nt">&lt;/span&gt;&lt;/blockquote&gt;</span>
-		<span class="nt">&lt;p&gt;&lt;q&gt;</span>There is also this way to mark a direct quote from someone inside a normal paragraph<span class="nt">&lt;/q&gt;</span> quoth the raven.<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-1"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>Text Tweaks<span class="nt">&lt;/h2&gt;</span>
-		<span class="nt">&lt;p&gt;</span>This is a <span class="nt">&lt;strong&gt;</span>strong text<span class="nt">&lt;/strong&gt;</span>, and this is an <span class="nt">&lt;em&gt;</span>emphasized<span class="nt">&lt;/em&gt;</span> word. <span class="nt">&lt;s&gt;</span>This isn't relevant anymore.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
-		<span class="nt">&lt;p&gt;</span>Please check out this <span class="nt">&lt;u&gt;</span>underlined<span class="nt">&lt;/u&gt;</span> word, but pay more attention to <span class="nt">&lt;mark</span> <span class="na">class=</span><span class="s">"warning"</span><span class="nt">&gt;</span>this one<span class="nt">&lt;/mark&gt;</span>!<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-						</code></pre></figure>
-					
-				</div>
-				
-		    </div>
-		    
-		</div>
 		</div>
 	</div>
-	
-	
 </article>
 						</div>
 						 
 					</div>
-				</div>
 			</section>
 			
 			<!-- General footer -->

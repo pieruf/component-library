@@ -171,7 +171,7 @@
 @mixin table($table-color, $variant: 'default') {
 	width: 100%;
 	float: left;
-	margin-top: 2rem;
+	margin: 2rem auto;
 	thead {
 		th {
 			background: $table-color;

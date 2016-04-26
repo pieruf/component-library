@@ -19,8 +19,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { background-color: #fbfef9; }
 
 .component { padding: 40px 0; border-bottom: 1px solid #ababab; }
+.component h2:first-of-type { margin-left: 1rem; }
 
 .component-description { font-style: italic; padding: 40px 0; }
+
+.shell > h1, .full-shell > h1 { padding: 2rem; }
 
 html { font-size: 62.5%; }
 
@@ -277,14 +280,14 @@ ol.inline > li { float: left; padding-right: 1rem; }
 dl dt { font-weight: 700; float: left; width: 150px; text-overflow: ellipsis; text-align: right; margin-right: 10px; }
 dl dd { margin-left: 160px; }
 
-table { width: 100%; float: left; margin-top: 2rem; }
+table { width: 100%; float: left; margin: 2rem auto; }
 table thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
 table tbody { border-bottom: 3px solid #2d425d; }
 table tbody tr { border-bottom: 1px solid #ababab; }
 table tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
 table tbody tr td { padding: 1rem 0 1rem 1rem; }
 
-table.striped { width: 100%; float: left; margin-top: 2rem; }
+table.striped { width: 100%; float: left; margin: 2rem auto; }
 table.striped thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
 table.striped tbody { border-bottom: 3px solid #2d425d; }
 table.striped tbody tr { border-bottom: 1px solid #ababab; }
@@ -292,7 +295,7 @@ table.striped tbody tr th { text-align: left; padding: 1rem 0 1rem 1rem; }
 table.striped tbody tr td { padding: 1rem 0 1rem 1rem; }
 table.striped tbody tr:nth-child(even) { background-color: #98afce; }
 
-table.hover { width: 100%; float: left; margin-top: 2rem; }
+table.hover { width: 100%; float: left; margin: 2rem auto; }
 table.hover thead th { background: #3d5a80; color: #fbfef9; font-weight: 900; line-height: 3.2rem; text-align: left; padding-left: 1rem; }
 table.hover tbody { border-bottom: 3px solid #2d425d; }
 table.hover tbody tr { border-bottom: 1px solid #ababab; }
@@ -374,4 +377,4 @@ textarea.not-resized { line-height: 1rem; height: 3rem !important; }
 .tab-group .tab-names a.tab-name-active { background-color: #3d5a80; }
 @media screen and (max-width: 479px) { .tab-group .tab-names { overflow-x: hidden; }
   .tab-group .tab-names a { width: 100%; } }
-.tab-group.tab-light .tab-content { background-color: #fbfef9; border: 2px solid #3d5a80; color: #3d5a80; }
+.tab-group.tab-light .tab-content { background-color: #fbfef9; border: 2px solid #3d5a80; color: #3d5a80; overflow-x: scroll; }
