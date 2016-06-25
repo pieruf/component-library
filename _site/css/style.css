@@ -19,11 +19,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { background-color: #fbfef9; }
 
 .component { padding: 40px 0; border-bottom: 1px solid #ababab; }
-.component h2:first-of-type { margin-left: 1rem; }
 
 .component-description { font-style: italic; padding: 40px 0; }
 
-.shell > h1, .full-shell > h1 { padding: 2rem; }
+.shell > h1, .full-shell > h1 { padding: 2rem 1rem; }
 
 html { font-size: 62.5%; }
 

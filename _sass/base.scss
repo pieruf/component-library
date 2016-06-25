@@ -5,9 +5,6 @@ body {
 .component {
 	padding: 40px 0;
 	border-bottom: 1px solid $color-grey;
-	h2:first-of-type {
-		margin-left: 1rem;
-	}
 }
 .component-description{
 	font-style: italic;
@@ -15,5 +12,5 @@ body {
 } 
 
 .shell > h1 {
-	padding: 2rem;
+	padding: 2rem 1rem;
 }
